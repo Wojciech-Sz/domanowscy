@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 
-export const muesoSansCyrl = localFont({
+export const museoSansCyrl = localFont({
   src: [
     {
       path: "./Museo Sans Cyrl/Museo Sans Cyrl 700.ttf",

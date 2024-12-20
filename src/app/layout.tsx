@@ -83,7 +83,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${montserrat.variable} ${museoSansCyrl.variable} antialiased`}
+        className={`${montserrat.className} ${museoSansCyrl.variable} antialiased`}
       >
         <main>
           <Navbar />

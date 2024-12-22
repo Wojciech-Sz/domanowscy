@@ -10,6 +10,8 @@ import NavLinks from "./NavLinks";
 import MenuIcon from "../icons/MenuIcon";
 import { Button } from "../ui/button";
 
+gsap.registerPlugin(useGSAP);
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

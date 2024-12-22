@@ -24,14 +24,14 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
               >
                 {name}
 
-                <div className="w-0 border-b-2 transition-all duration-300 group-hover:w-full" />
+                <div className="w-0 border-b-2 border-foreground transition-all duration-300 group-hover:w-full" />
               </Link>
               <ul className="flex flex-col gap-2 text-xl">
                 {ROUTES.PROJECTS.map(({ href, name }) => (
                   <li className="group h-full w-max" key={name}>
                     <Link href={href} title={name} onClick={closeMenu}>
                       {name}
-                      <div className="w-0 border-b-2 transition-all duration-300 group-hover:w-full" />
+                      <div className="w-0 border-b-2 border-foreground transition-all duration-300 group-hover:w-full" />
                     </Link>
                   </li>
                 ))}
@@ -44,7 +44,7 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
             >
               <Link href={href} onClick={closeMenu} className="">
                 {name}
-                <div className="w-0 border-b-2 transition-all duration-300 group-hover:w-full" />
+                <div className="w-0 border-b-2 border-foreground transition-all duration-300 group-hover:w-full" />
               </Link>
             </li>
           )

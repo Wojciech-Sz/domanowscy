@@ -85,9 +85,11 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} ${museoSansCyrl.variable} antialiased`}
       >
-        <main>
+        <main className="flex flex-col">
           <Navbar />
-          <section className="flex flex-col">{children}</section>
+          <section className="flex min-h-screen w-full flex-col items-center">
+            {children}
+          </section>
           <Footer />
         </main>
       </body>

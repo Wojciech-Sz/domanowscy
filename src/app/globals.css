@@ -43,10 +43,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-foreground;
-  }
-
   body {
     @apply bg-background text-foreground;
   }
@@ -56,7 +52,21 @@
   .flex-center {
     @apply flex items-center justify-center w-full;
   }
+
   .btn {
     @apply px-1 py-0 font-museoSansCyrl tracking-tighter text-sm/none font-bold h-6 md:h-7 uppercase xs:px-1.5 xs:text-base/none sm:px-2 md:text-lg/none xl:text-xl/none;
+  }
+
+  .section-gap {
+    @apply gap-5 lg:gap-7;
+  }
+
+  /* Hero Section */
+  .hero {
+    @apply relative flex h-[clamp(73vh,83svh,83vh)] w-full items-end justify-center overflow-hidden px-5 sm:px-10;
+  }
+
+  .hero-text {
+    @apply relative flex w-full max-w-7xl flex-col gap-4 pb-5 text-left font-montserrat text-3xl font-thin text-white sm:pb-10 sm:text-4xl lg:gap-8 lg:text-5xl;
   }
 }

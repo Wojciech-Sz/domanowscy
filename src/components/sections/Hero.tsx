@@ -56,7 +56,7 @@ const Hero = ({ heroImages, className, children }: HeroProps) => {
         <Image
           key={image.id}
           id={image.id}
-          src={image.url}
+          src={image.imgUrl}
           alt={image.id}
           priority
           title="Hero image"

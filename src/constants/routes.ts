@@ -8,7 +8,7 @@ const ROUTES = {
   ],
   APPOINTMENT: { href: "/umow-spotkanie", name: "Umów Spotkanie" },
   PROJECT: (projectTitle: string) => ({
-    href: `/galeria/projekt/${projectTitle}`,
+    href: `/galeria/projekty/${projectTitle}`,
   }),
 };
 

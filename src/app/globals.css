@@ -49,16 +49,46 @@
 }
 
 @layer utilities {
-  .flex-center {
-    @apply flex items-center justify-center w-full;
-  }
-
   .btn {
     @apply px-1 py-0 font-museoSansCyrl tracking-tighter text-sm/none font-bold h-6 md:h-7 uppercase xs:px-1.5 xs:text-base/none sm:px-2 md:text-lg/none xl:text-xl/none;
   }
 
+  .animated-border {
+    @apply w-0 border-b-2 border-foreground transition-all duration-300 group-hover:w-full;
+  }
+
+  .img-span-2 {
+    @apply sm:last:col-span-2 sm:last:aspect-video lg:last:col-span-1 lg:last:aspect-[7/10];
+  }
+
+  /* Sections */
+
+  .section {
+    @apply flex w-full flex-col items-center px-5 sm:px-10;
+  }
+
+  .section-container {
+    @apply flex w-full max-w-7xl flex-col section-gap;
+  }
+
+  .section-p-big {
+    @apply pt-16 lg:pt-20;
+  }
+
+  .section-p-small {
+    @apply pt-5 lg:pt-7;
+  }
+
   .section-gap {
     @apply gap-5 lg:gap-7;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold uppercase tracking-tighter lg:text-4xl;
+  }
+
+  .section-grid {
+    @apply section-gap grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
   }
 
   /* Hero Section */

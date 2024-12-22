@@ -7,13 +7,11 @@ import { Separator } from "../ui/separator";
 
 const Office = () => {
   return (
-    <section className="relative flex w-full flex-col items-center px-5 pb-14 pt-5 sm:px-10 md:pb-20 lg:pt-7">
+    <section className="section section-p-small relative">
       <div id="office" className="absolute -top-10" />
-      <div className="section-gap flex w-full max-w-7xl flex-col">
+      <div className="section-container">
         <div>
-          <h2 className="text-3xl font-bold uppercase tracking-tighter lg:text-4xl">
-            Pracownia
-          </h2>
+          <h2 className="section-title">Pracownia</h2>
           <Separator className="border-b-2 border-foreground" />
         </div>
         <div className="section-gap grid h-min w-full grid-cols-1 lg:grid-cols-2">
@@ -53,7 +51,7 @@ const Office = () => {
             key={question.title}
             className="grid w-full grid-cols-1 md:grid-cols-[25%_1fr] md:gap-2"
           >
-            <h4 className="self-center text-balance text-2xl/none font-bold tracking-tight">
+            <h4 className="self-center text-balance font-museoSansCyrl text-2xl/none font-bold tracking-tight">
               {question.title}
             </h4>
             <div className="section-gap flex flex-col items-center font-montserrat text-base/snug md:flex-row lg:text-lg/snug">

@@ -58,13 +58,13 @@
   }
 
   .img-span-2 {
-    @apply sm:last:col-span-2 sm:last:aspect-video lg:last:col-span-1 lg:last:aspect-[7/10];
+    @apply sm:last:col-span-2 lg:last:col-span-1;
   }
 
   /* Sections */
 
   .section {
-    @apply flex w-full flex-col items-center px-5 sm:px-10;
+    @apply flex bg-background w-full flex-col items-center px-5 sm:px-10;
   }
 
   .section-container {

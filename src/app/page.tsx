@@ -1,5 +1,6 @@
 import About from "@/components/sections/About";
 import Appointment from "@/components/sections/Appointment";
+import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import Hero from "@/components/sections/Hero";
 import Office from "@/components/sections/Office";
@@ -21,6 +22,7 @@ export default function Home() {
       <Projects />
       <About />
       <Appointment />
+      <Contact />
       <Footer />
     </>
   );

@@ -84,7 +84,7 @@
   }
 
   .section-title {
-    @apply text-3xl font-bold uppercase tracking-tighter lg:text-4xl;
+    @apply font-museoSansCyrl text-3xl font-bold uppercase tracking-tighter lg:text-4xl;
   }
 
   .section-grid {

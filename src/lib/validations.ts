@@ -41,7 +41,7 @@ export const contactFormSchema = z.object({
       },
       {
         message:
-          "Numer telefonu musi składać sie z conajmniej 9 cyfr (numeru kierunkowego).",
+          "Numer telefonu musi składać sie z conajmniej 9 cyfr (bez numeru kierunkowego).",
       }
     ),
   subject: z
@@ -110,7 +110,7 @@ export const appointmentFormSchema = z
         },
         {
           message:
-            "Numer telefonu musi składać sie z conajmniej 9 cyfr (numeru kierunkowego).",
+            "Numer telefonu musi składać sie z conajmniej 9 cyfr (bez numeru kierunkowego).",
         }
       ),
     email: z.string().email({ message: "Niepoprawny adres E-mail" }),

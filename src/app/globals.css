@@ -50,7 +50,7 @@
 
 @layer utilities {
   .btn {
-    @apply px-1 py-0 font-museoSansCyrl tracking-tighter text-sm/none font-bold h-6 md:h-7 uppercase xs:px-1.5 xs:text-base/none sm:px-2 md:text-lg/none xl:text-xl/none;
+    @apply py-0 font-museoSansCyrl tracking-tighter font-bold h-7 uppercase px-2 text-xl/none;
   }
 
   .animated-border {
@@ -64,19 +64,23 @@
   /* Sections */
 
   .section {
-    @apply flex bg-background w-full flex-col items-center px-5 sm:px-10;
+    @apply flex bg-background w-full flex-col items-center section-px;
   }
 
   .section-container {
     @apply flex w-full max-w-7xl flex-col section-gap;
   }
 
-  .section-p-big {
+  .section-pt-big {
     @apply pt-16 lg:pt-20;
   }
 
-  .section-p-small {
+  .section-pt-small {
     @apply pt-5 lg:pt-7;
+  }
+
+  .section-px {
+    @apply px-5 sm:px-7;
   }
 
   .section-gap {
@@ -98,5 +102,26 @@
 
   .hero-text {
     @apply relative flex w-full max-w-7xl flex-col gap-4 pb-5 text-left font-montserrat text-3xl font-thin text-white sm:pb-10 sm:text-4xl lg:gap-8 lg:text-5xl;
+  }
+
+  /* Svg Background */
+  .svgBg {
+    @apply absolute inset-x-0 bottom-0 top-0 z-[0] grid grid-cols-[repeat(10,1fr)] md:grid-cols-[repeat(16,1fr)] lg:grid-cols-[repeat(22,1fr)];
+  }
+
+  .svgBg-line {
+    @apply border-l border-border;
+  }
+
+  .svgBg-square_sm {
+    @apply absolute bottom-0 top-[76%]  w-full md:aspect-[1/4] md:top-auto bg-muted lg:bottom-[16%] lg:top-[auto] lg:max-h-[40%];
+  }
+
+  .svg-circle {
+    @apply absolute left-0 right-[-102%] hidden aspect-square rounded-full border border-muted-foreground lg:block;
+  }
+
+  .svgBg-square_lg {
+    @apply absolute w-full top-[13%] bottom-[24%] xs:top-[12%]  md:bottom-[31%] md:top-[11.5%] lg:top-[16.5%] lg:bottom-[7%] bg-muted;
   }
 }

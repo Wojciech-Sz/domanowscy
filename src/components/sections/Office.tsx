@@ -7,7 +7,7 @@ import { Separator } from "../ui/separator";
 
 const Office = () => {
   return (
-    <section className="section section-p-small relative">
+    <section className="section section-pt-small relative">
       <div id="office" className="absolute -top-10" />
       <div className="section-container">
         <div>
@@ -49,7 +49,7 @@ const Office = () => {
         {office.map((question) => (
           <article
             key={question.title}
-            className="grid w-full grid-cols-1 md:grid-cols-[25%_1fr] md:gap-2"
+            className="grid w-full grid-cols-1 md:grid-cols-[22%_1fr] md:gap-2"
           >
             <h4 className="self-center text-balance font-museoSansCyrl text-2xl/none font-bold tracking-tight">
               {question.title}

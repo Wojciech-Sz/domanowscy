@@ -6,7 +6,7 @@ import { aboutImages } from "@/constants/gallery";
 
 const About = () => {
   return (
-    <section id="about" className="section section-p-big pb-20">
+    <section id="about" className="section section-pt-big pb-20">
       <div className="section-container">
         <div>
           <h2 className="section-title">O Nas</h2>
@@ -16,22 +16,20 @@ const About = () => {
           {aboutImages.map(({ image, name, position }) => (
             <div
               key={name}
-              className="img-span-2 flex w-full flex-col gap-2 transition-all duration-500 hover:-translate-y-3 hover:scale-[103%] hover:shadow-lg"
+              className="img-span-2 flex size-full flex-col gap-2 transition-all duration-500 hover:-translate-y-3 hover:scale-[103%] hover:shadow-lg"
             >
               <Image
                 src={image}
                 alt={name}
                 width={1000}
                 height={1000}
-                className="aspect-[7/10] size-full max-h-[70vh] object-cover"
+                className="aspect-[7/10] max-h-[70vh] w-full object-cover"
               />
 
               <div className="tracking-tighter">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl/none font-bold sm:text-xl/none xl:text-2xl/none">
-                    {name}
-                  </h3>
-                  <p className="text-lg/none font-medium italic text-muted-foreground xs:text-xl/none sm:text-lg/none xl:text-xl/none">
+                  <h3 className="text-xl/none font-bold">{name}</h3>
+                  <p className="text-lg/none font-medium italic text-muted-foreground">
                     {position}
                   </p>
                 </div>

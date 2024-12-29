@@ -84,7 +84,7 @@ const Navbar = () => {
   }, [isOpen, toggleMenu]);
   return (
     <nav
-      className={`sticky top-0 z-50 h-16 w-full bg-background/90 px-5 sm:px-10 ${!isOpen && "shadow-md"}`}
+      className={`section-px sticky top-0 z-50 h-16 w-full bg-background/90 ${!isOpen && "shadow-md"}`}
     >
       <div className="relative mx-auto flex h-full max-w-7xl items-center justify-between">
         <button
@@ -97,7 +97,7 @@ const Navbar = () => {
             topLine={topLine}
             middleLine={middleLine}
             bottomLine={bottomLine}
-            className="size-6 text-foreground  md:size-7"
+            className="size-7 text-foreground"
           />
         </button>
         <Link
@@ -115,6 +115,7 @@ const Navbar = () => {
               <Link
                 key={item.href}
                 href={item.href}
+                title={item.name}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center hover:text-secondary"
@@ -128,7 +129,6 @@ const Navbar = () => {
             href="/#contact"
             prefetch={false}
             className="flex items-center"
-            title="Kontakt"
           >
             <Button className="btn">Kontakt</Button>
           </Link>

@@ -21,11 +21,7 @@ const Appointment = () => {
         wymarzoną przestrzenią, jesteśmy gotowi.
       </p>
 
-      <Link
-        href="/konsultacje"
-        title="Umów spotkanie"
-        className="flex items-center"
-      >
+      <Link href="/konsultacje" className="flex items-center">
         <Button className="font-museoSansCyrl text-lg font-bold uppercase md:text-xl">
           SKONTAKUJ SIĘ Z NAMI
         </Button>

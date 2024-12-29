@@ -19,7 +19,6 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
                 className="group w-max text-2xl font-bold hover:text-foreground/90"
                 prefetch={false}
                 scroll
-                title={name}
                 onClick={closeMenu}
               >
                 {name}
@@ -29,7 +28,7 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
               <ul className="flex flex-col gap-2 text-xl">
                 {ROUTES.PROJECTS.map(({ href, name }) => (
                   <li className="group h-full w-max" key={name}>
-                    <Link href={href} title={name} onClick={closeMenu}>
+                    <Link href={href} onClick={closeMenu}>
                       {name}
                       <div className="animated-border" />
                     </Link>
@@ -42,7 +41,7 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
               key={name}
               className="group h-full w-max text-2xl font-bold tracking-tighter hover:text-foreground/90"
             >
-              <Link href={href} onClick={closeMenu} className="">
+              <Link href={href} onClick={closeMenu}>
                 {name}
                 <div className="animated-border" />
               </Link>
@@ -55,6 +54,7 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
               key={name}
               href={href}
               target="_blank"
+              title={name}
               rel="noopener noreferrer"
               className="flex items-center justify-center text-foreground hover:text-secondary"
             >

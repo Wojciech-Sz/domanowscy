@@ -13,7 +13,7 @@ import { Separator } from "../ui/separator";
 const Projects = () => {
   const [visible, setVisible] = useState(false);
   return (
-    <section id="projects" className="section section-p-big">
+    <section id="projects" className="section section-pt-big">
       <div className="section-container">
         <div className="relative flex w-full flex-col">
           <div className="flex h-max w-full flex-row items-center justify-between gap-2">

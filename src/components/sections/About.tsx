@@ -1,8 +1,9 @@
-import { Separator } from "@radix-ui/react-separator";
 import Image from "next/image";
 import React from "react";
 
 import { aboutImages } from "@/constants/gallery";
+
+import { Separator } from "../ui/separator";
 
 const About = () => {
   return (

@@ -11,26 +11,26 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
         {navLinks.map(({ href, name }) =>
           name === "Realizacje" ? (
             <li
-              className="flex h-full flex-col gap-2 tracking-tighter hover:text-foreground/90"
+              className="flex h-full flex-col gap-2 tracking-tighter"
               key={name}
             >
               <Link
                 href={href}
-                className="group w-max text-2xl font-bold hover:text-foreground/90"
+                className="group w-max text-2xl font-bold"
                 prefetch={false}
                 scroll
                 onClick={closeMenu}
               >
                 {name}
 
-                <div className="animated-border" />
+                <div className="animated-border separator" />
               </Link>
               <ul className="flex flex-col gap-2 text-xl">
                 {ROUTES.PROJECTS.map(({ href, name }) => (
                   <li className="group h-full w-max" key={name}>
                     <Link href={href} onClick={closeMenu}>
                       {name}
-                      <div className="animated-border" />
+                      <div className="animated-border separator" />
                     </Link>
                   </li>
                 ))}
@@ -39,11 +39,11 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
           ) : (
             <li
               key={name}
-              className="group h-full w-max text-2xl font-bold tracking-tighter hover:text-foreground/90"
+              className="group h-full w-max text-2xl font-bold tracking-tighter"
             >
               <Link href={href} onClick={closeMenu}>
                 {name}
-                <div className="animated-border" />
+                <div className="animated-border separator" />
               </Link>
             </li>
           )

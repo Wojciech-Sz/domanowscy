@@ -5,9 +5,16 @@ import gsap from "gsap";
 import Image from "next/image";
 import React from "react";
 
-import { HeroProps } from "@/types/global";
-
 gsap.registerPlugin(useGSAP);
+
+interface HeroProps {
+  heroImages: {
+    imgUrl: string;
+    id: string;
+  }[];
+  className?: string;
+  children?: React.ReactNode;
+}
 
 const Hero = ({ heroImages, className, children }: HeroProps) => {
   const tl = gsap.timeline({

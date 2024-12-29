@@ -46,6 +46,10 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .hero-gallery {
+    @apply h-[200px] md:h-[250px] xl:h-[320px];
+  }
 }
 
 @layer utilities {
@@ -53,8 +57,12 @@
     @apply py-0 font-museoSansCyrl tracking-tighter font-bold h-7 uppercase px-2 text-xl/none;
   }
 
+  .separator {
+    @apply border-b-2 border-foreground;
+  }
+
   .animated-border {
-    @apply w-0 border-b-2 border-foreground transition-all duration-300 group-hover:w-full;
+    @apply w-0 transition-all duration-300 group-hover:w-full;
   }
 
   .img-span-2 {
@@ -77,6 +85,10 @@
 
   .section-pt-small {
     @apply pt-5 lg:pt-7;
+  }
+
+  .section-pb {
+    @apply pb-5 lg:pb-7;
   }
 
   .section-px {
@@ -102,6 +114,10 @@
 
   .hero-text {
     @apply relative flex w-full max-w-7xl flex-col gap-4 pb-5 text-left font-montserrat text-3xl font-thin text-white sm:pb-10 sm:text-4xl lg:gap-8 lg:text-5xl;
+  }
+
+  .hero-gallery {
+    @apply relative flex w-full items-center justify-center overflow-hidden portrait:h-[clamp(150px,20svh,250px)] md:portrait:h-[clamp(250px,20svh,350px)] landscape:h-[clamp(220px,30svh,320px)] xl:landscape:h-[clamp(250px,35svh,350px)];
   }
 
   /* Svg Background */

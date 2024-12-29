@@ -18,7 +18,7 @@ const ProjectsGallery = ({ projectsImages }: ProjectsGalleryProps) => {
         <Link
           key={title}
           href={ROUTES.PROJECT(title).href}
-          className="img-span-2 group relative aspect-[7/10] size-full max-h-[70vh] overflow-hidden"
+          className={`${projectsImages.length % 2 !== 0 ? "img-span-2" : ""} group relative aspect-[7/10] size-full max-h-[70vh] overflow-hidden`}
         >
           <Image
             src={imgUrl}

@@ -8,16 +8,17 @@ interface ProjectsGalleryProps {
   projectsImages: {
     imgUrl: string;
     title: string;
+    route: string;
   }[];
 }
 
 const ProjectsGallery = ({ projectsImages }: ProjectsGalleryProps) => {
   return (
     <div className="section-grid">
-      {projectsImages.map(({ imgUrl, title }) => (
+      {projectsImages.map(({ imgUrl, title, route }) => (
         <Link
-          key={title}
-          href={ROUTES.PROJECT(title).href}
+          key={route}
+          href={ROUTES.PROJECT(route).href}
           className={`${projectsImages.length % 2 !== 0 ? "img-span-2" : ""} group relative aspect-[7/10] size-full max-h-[70vh] overflow-hidden`}
         >
           <Image

@@ -11,13 +11,13 @@ const Footer = () => {
           href="/"
           prefetch={false}
           className="flex items-center justify-center"
-          title="White Hill"
+          title="Domanowscy"
           scroll
         >
-          <span className="text-2xl/none  font-bold">White Hill</span>
+          <span className="text-2xl/none  font-bold">Domanowscy</span>
         </Link>
         <p className="block text-center leading-none sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2">
-          © {new Date().getFullYear()} White Hill.
+          © {new Date().getFullYear()} Domanowscy.
           <br />
           Wszelkie prawa zastrzeżone.
         </p>

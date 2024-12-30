@@ -107,7 +107,7 @@ const Navbar = () => {
           scroll
           title="Powrót na góre"
         >
-          White Hill
+          Domanowscy
         </Link>
         <div className="flex items-center gap-5">
           <div className="hidden gap-2 sm:flex">

@@ -8,8 +8,8 @@ import { montserrat, museoSansCyrl } from "./fonts";
 
 export const metadata: Metadata = {
   title: {
-    default: "WhiteHill Architecture | Budynki & Wnętrza",
-    template: "WhiteHill Architecture | %s",
+    default: "Domanowscy Architekci | Budynki & Wnętrza",
+    template: "Domanowscy Architekci | %s",
   },
   description:
     "Oferujemy kompleksowe usługi architektoniczne obejmujące projektowanie całych obiektów oraz aranżację wnętrz. Stawiamy na funkcjonalność i estetykę.",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "budynki",
     "wnętrza",
     "whitehill",
-    "whitehill architecture",
+    "Domanowscy Architekci",
     "budynki mieszkalne",
     "budynki usługowe",
     "architekt białystok",
@@ -28,15 +28,15 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "WhiteHill Architecture | Budynki & Wnętrza",
+    title: "Domanowscy Architekci | Budynki & Wnętrza",
     description:
       "Kompleksowe usługi architektoniczne dla budynków i wnętrz dostosowane do Twoich potrzeb.",
     url: "https://white-hill-two.vercel.app/",
-    siteName: "WhiteHill Architecture",
+    siteName: "Domanowscy Architekci",
     images: [
       {
         url: "https://utfs.io/f///5b304e99-9833-4093-9c2a-78ece5c5c6aa-rcqaza.png",
-        alt: "WhiteHill Architecture | Budynki & Wnętrza",
+        alt: "Domanowscy Architekci | Budynki & Wnętrza",
       },
     ],
     type: "website",
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "WhiteHill Architecture | Budynki & Wnętrza",
+    title: "Domanowscy Architekci | Budynki & Wnętrza",
     description:
       "Kompleksowe usługi architektoniczne dla budynów i wnętrz dostosowane do Twoich potrzeb.",
     images: [
       {
         url: "https://utfs.io/f///5b304e99-9833-4093-9c2a-78ece5c5c6aa-rcqaza.png",
-        alt: "WhiteHill Architecture | Budynki & Wnętrza",
+        alt: "Domanowscy Architekci | Budynki & Wnętrza",
       },
     ],
   },

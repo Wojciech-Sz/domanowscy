@@ -21,46 +21,55 @@ export const projectsImages = [
     imgUrl:
       "https://utfs.io/f///5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
     title: "Kierszek Wnętrze - 1920 x 1440",
+    route: "Kierszek_Wnetrze-1920x1440",
   },
   {
     imgUrl:
       "https://utfs.io/f///91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
     title: "Kierszek Wnętrze - 1920 x 1920",
+    route: "Kierszek_Wnetrze-1920x1920",
   },
   {
     imgUrl:
       "https://utfs.io/f///9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
     title: "Bobrowiec Wnętrze - 1920 x 2400",
+    route: "Bobrowiec_Wnetrze-1920x2400",
   },
   {
     imgUrl:
       "https://utfs.io/f///806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
     title: "Kierszek Wnętrze - 1350 x 1080",
+    route: "Kierszek_Wnetrze-1350x1080",
   },
   {
     imgUrl:
       "https://utfs.io/f///083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
     title: "Kierszek Wnętrze - 1920 x 1080",
+    route: "Kierszek_Wnetrze-1920x1080",
   },
   {
     imgUrl:
       "https://utfs.io/f///75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
     title: "Kierszek Wnętrze - 1920 x 1536",
+    route: "Kierszek_Wnetrze-1920x1536",
   },
   {
     imgUrl:
       "https://utfs.io/f///5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
     title: "Bobrowiec Wnętrze 1920 x 1920",
+    route: "Bobrowiec_Wnetrze120x1920",
   },
   {
     imgUrl:
       "https://utfs.io/f///01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
     title: "Bobrowiec Wnętrze 1920 x 1080",
+    route: "Bobrowiec_Wnetrze120x1080",
   },
   {
     imgUrl:
       "https://utfs.io/f///db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
     title: "Bobrowiec Wnętrze 1000 x 563",
+    route: "Bobrowiec_Wnetrze100x563",
   },
 ];
 
@@ -69,31 +78,337 @@ export const interiorsImages = [
     imgUrl:
       "https://utfs.io/f///806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
     title: "Kierszek Wnętrze - 1350 x 1080",
+    route: "Kierszek_Wnetrze-1350x1080",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
+        width: 1350,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
+        width: 1350,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
+        width: 1350,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
+        width: 1350,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
+        width: 1350,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
+        width: 1350,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
+        width: 1350,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
+        width: 1350,
+        height: 1080,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
     title: "Kierszek Wnętrze - 1920 x 1080",
+    route: "Kierszek_Wnetrze-1920x1080",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
+        width: 1920,
+        height: 1080,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
     title: "Kierszek Wnętrze - 1920 x 1536",
+    route: "Kierszek_Wnetrze-1920x1536",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
+        width: 1920,
+        height: 1536,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
+        width: 1920,
+        height: 1536,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
+        width: 1920,
+        height: 1536,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
+        width: 1920,
+        height: 1536,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
+        width: 1920,
+        height: 1536,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
+        width: 1920,
+        height: 1536,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
+        width: 1920,
+        height: 1536,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
+        width: 1920,
+        height: 1536,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
     title: "Tytuł4 225m21",
+    route: "Tytul4-225m21",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
     title: "Tytuł5 225m22",
+    route: "Tytul5-225m22",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
     title: "Tytuł6 225m23",
+    route: "Tytul6-225m23",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+    ],
   },
 ];
 
@@ -102,31 +417,337 @@ export const officesImages = [
     imgUrl:
       "https://utfs.io/f///5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
     title: "Bobrowiec Wnętrze 1920 x 1920",
+    route: "Bobrowiec_Wnetrze120x1920",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
+        width: 1920,
+        height: 1920,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
     title: "Bobrowiec Wnętrze 1920 x 1080",
+    route: "Bobrowiec_Wnetrze120x1080",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
+        width: 1920,
+        height: 1080,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
     title: "Bobrowiec Wnętrze 1000 x 563",
+    route: "Bobrowiec_Wnetrze100x563",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
+        width: 1000,
+        height: 563,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
+        width: 1000,
+        height: 563,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
+        width: 1000,
+        height: 563,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
+        width: 1000,
+        height: 563,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
+        width: 1000,
+        height: 563,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
+        width: 1000,
+        height: 563,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
+        width: 1000,
+        height: 563,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
+        width: 1000,
+        height: 563,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
     title: "Tytuł7 225m2",
+    route: "Tytul7-225m2",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
     title: "Tytuł8 225m2",
+    route: "Tytul8-225m2",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
     title: "Tytuł9 225m2",
+    route: "Tytul9-225m2",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+        width: 1000,
+        height: 1000,
+      },
+    ],
   },
 ];
 
@@ -135,31 +756,337 @@ export const homesImages = [
     imgUrl:
       "https://utfs.io/f///5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
     title: "Kierszek Wnętrze - 1920 x 1440",
+    route: "Kierszek_Wnetrze-1920x1440",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
+        width: 1920,
+        height: 1440,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
+        width: 1920,
+        height: 1440,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
+        width: 1920,
+        height: 1440,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
+        width: 1920,
+        height: 1440,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
+        width: 1920,
+        height: 1440,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
+        width: 1920,
+        height: 1440,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
+        width: 1920,
+        height: 1440,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
+        width: 1920,
+        height: 1440,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
     title: "Kierszek Wnętrze - 1920 x 1920",
+    route: "Kierszek_Wnetrze-1920x1920",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
+        width: 1920,
+        height: 1920,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
+        width: 1920,
+        height: 1920,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
     title: "Bobrowiec Wnętrze - 1920 x 2400",
+    route: "Bobrowiec_Wnetrze-1920x2400",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
+        width: 1920,
+        height: 2400,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
+        width: 1920,
+        height: 2400,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
+        width: 1920,
+        height: 2400,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
+        width: 1920,
+        height: 2400,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
+        width: 1920,
+        height: 2400,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
+        width: 1920,
+        height: 2400,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
+        width: 1920,
+        height: 2400,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
+        width: 1920,
+        height: 2400,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
     title: "Tytuł1 225m2",
+    route: "Tytul1-225m2",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
     title: "Tytuł2 225m2",
+    route: "Tytul2-225m2",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+    ],
   },
   {
     imgUrl:
       "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
     title: "Tytuł3 225m2",
+    route: "Tytul3-225m2",
+    images: [
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+      {
+        imgUrl:
+          "https://utfs.io/f///b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+        width: 1000,
+        height: 1000,
+      },
+    ],
   },
 ];
 

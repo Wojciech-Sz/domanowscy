@@ -26,7 +26,7 @@ const Office = () => {
           </div>
           <div className="font-montserrat text-lg/tight lg:text-xl/tight">
             <h3 className="text-xl/none font-semibold tracking-tighter lg:text-2xl/none">
-              WHITEHILL
+              Domanowscy Architekci
             </h3>
             <p className="mb-4">
               to biuro projektowe specjalizujące się w kompleksowym

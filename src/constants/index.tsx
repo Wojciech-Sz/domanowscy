@@ -80,7 +80,7 @@ export const office = [
       {
         title: "Dbałość o szczegóły: ",
         description:
-          "W WHITEHILL wiemy, że diabeł tkwi w szczegółach. Dlatego z wielką starannością podchodzimy do każdego etapu projektu, dbając o to, aby każdy element spełniał Twoje najwyższe oczekiwania.",
+          "W Domanowscy Architekci wiemy, że diabeł tkwi w szczegółach. Dlatego z wielką starannością podchodzimy do każdego etapu projektu, dbając o to, aby każdy element spełniał Twoje najwyższe oczekiwania.",
       },
       {
         title: "Zarządzanie projektem od A do Z: ",
@@ -113,5 +113,32 @@ export const office = [
           "Naszym celem jest tworzenie przestrzeni, które inspirują i spełniają marzenia ich użytkowników. Wierzymy, że architektura i projektowanie wnętrz to sztuka, która powinna być dostosowana do indywidualnych potrzeb i stylu życia. Dlatego stawiamy na kreatywność, funkcjonalność i wyjątkowy charakter każdego projektu.",
       },
     ],
+  },
+];
+
+export const appointments = [
+  {
+    title: "Konsultacja - 15 min",
+    description:
+      "Konsultacje projektowe to czas w którym służymy Państwu swoim doświadczeniem i wiedzą",
+    content: {
+      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae itaque, saepe enim ipsam quod minima nulla deserunt animi nesciunt veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae itaque, saepe enim ipsam quod minima nulla deserunt animi nesciunt veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae itaque, saepe enim ipsam quod minima nulla deserunt animi nesciunt veritatis.",
+    },
+  },
+  {
+    title: "Konsultacja - 1 h - 300zł",
+    description:
+      "Konsultacje projektowe to czas w którym służymy Państwu swoim doświadczeniem i wiedzą",
+    content: {
+      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae itaque, saepe enim ipsam quod minima nulla deserunt animi nesciunt veritatis.",
+    },
+  },
+  {
+    title: "Konsultacja - 2 h - 500zł",
+    description:
+      "Konsultacje projektowe to czas w którym służymy Państwu swoim doświadczeniem i wiedzą",
+    content: {
+      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae itaque, saepe enim ipsam quod minima nulla deserunt animi nesciunt veritatis.",
+    },
   },
 ];

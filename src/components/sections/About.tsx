@@ -17,7 +17,7 @@ const About = () => {
           {aboutImages.map(({ image, name, position }) => (
             <div
               key={name}
-              className="img-span-2 flex size-full flex-col gap-2 transition-all duration-500 hover:-translate-y-3 hover:scale-[103%] hover:shadow-lg"
+              className="img-span-2 flex size-full flex-col gap-2 pb-2 transition-all duration-500 hover:-translate-y-3 hover:scale-[103%] hover:shadow-lg"
             >
               <Image
                 src={image}

@@ -1,13 +1,15 @@
 import Link from "next/link";
 import React from "react";
 
+import ROUTES from "@/constants/routes";
+
 import { Button } from "../ui/button";
 
 const Appointment = () => {
   return (
     <section
       id="contact"
-      className="flex h-[60vh] w-full flex-col items-center justify-center gap-6"
+      className="flex min-h-max  w-full flex-col items-center justify-center gap-6 py-52"
     >
       <div
         style={{
@@ -21,10 +23,8 @@ const Appointment = () => {
         wymarzoną przestrzenią, jesteśmy gotowi.
       </p>
 
-      <Link href="/konsultacje" className="flex items-center">
-        <Button className="font-museoSansCyrl text-lg font-bold uppercase md:text-xl">
-          SKONTAKUJ SIĘ Z NAMI
-        </Button>
+      <Link href={ROUTES.APPOINTMENT.href} className="flex items-center">
+        <Button className="btn-contact">SKONTAKUJ SIĘ Z NAMI</Button>
       </Link>
     </section>
   );

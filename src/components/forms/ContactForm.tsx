@@ -200,7 +200,7 @@ const ContactForm = () => {
             type="submit"
             size="lg"
             disabled={isPending}
-            className="font-museoSansCyrl text-lg font-bold uppercase md:text-xl"
+            className="btn-contact"
           >
             {isPending ? (
               <>

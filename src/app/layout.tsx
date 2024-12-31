@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   keywords: [
     "budynki",
     "wnętrza",
-    "whitehill",
     "Domanowscy Architekci",
     "budynki mieszkalne",
     "budynki usługowe",
@@ -85,9 +84,9 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} ${museoSansCyrl.variable} antialiased`}
       >
-        <main className="flex flex-col">
+        <main className="flex min-h-screen flex-col">
           <Navbar />
-          <section className="flex min-h-screen w-full flex-col items-center">
+          <section className="flex w-full flex-1 flex-col items-center">
             {children}
           </section>
           <Footer />

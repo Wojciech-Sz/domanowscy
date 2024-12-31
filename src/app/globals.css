@@ -31,7 +31,7 @@
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 100% 95%;
 
-    --ring: 30 15% 50%;
+    --ring: 30 3% 70%;
   }
 }
 
@@ -54,7 +54,15 @@
 
 @layer utilities {
   .btn {
-    @apply py-0 font-museoSansCyrl tracking-tighter font-bold h-7 uppercase px-2 text-xl/none;
+    @apply py-0 font-museoSansCyrl tracking-tighter font-bold h-7 uppercase px-2 text-lg sm:text-xl/none;
+  }
+
+  .btn-contact {
+    @apply font-museoSansCyrl text-lg font-bold uppercase md:text-xl;
+  }
+
+  .input {
+    @apply flex h-10 w-full rounded-md border-2 border-input bg-transparent px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50;
   }
 
   .separator {
@@ -140,4 +148,47 @@
   .svgBg-square_lg {
     @apply absolute w-full top-[13%] bottom-[24%] xs:top-[12%]  md:bottom-[31%] md:top-[11.5%] lg:top-[16.5%] lg:bottom-[7%] bg-muted;
   }
+}
+
+/* Date Picker */
+.datePicker {
+  width: 100%;
+}
+
+.react-datepicker ::-webkit-scrollbar {
+  display: none;
+}
+
+.react-datepicker {
+  display: flex !important;
+}
+
+.react-datepicker__input-container input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+}
+
+.react-datepicker__day--selected {
+  background-color: hsl(var(--primary)) !important;
+  color: #ffffff !important;
+  border-radius: 4px;
+}
+
+.react-datepicker__time-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: hsl(var(--background)) !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: hsl(var(--background)) !important;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: hsl(var(--primary)) !important;
 }

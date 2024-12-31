@@ -20,7 +20,7 @@ export const contactFormSchema = z.object({
   phoneNumber: z
     .string()
     .regex(
-      /^(\+\d{1,3}[ ])?(\d{1,4}[- ]?){2,}$/,
+      /^(\+\d{1,3}[ ,.-])?(\d{1,4}[- ,.]?){2,}$/,
       "Numer telefonu jest nieprawidłowy."
     )
     .refine(
@@ -29,7 +29,7 @@ export const contactFormSchema = z.object({
         const digitsOnly = val.replace(/[^\d]/g, "");
         let countryCode = "";
         if (val.includes("+")) {
-          const endOfCountryCodeIndex = val.search(/[-\s]/);
+          const endOfCountryCodeIndex = val.search(/[-\s,.]/);
           if (endOfCountryCodeIndex !== -1) {
             countryCode = val.slice(1, endOfCountryCodeIndex); // Extract digits after +
           } else {
@@ -89,7 +89,7 @@ export const appointmentFormSchema = z
     phoneNumber: z
       .string()
       .regex(
-        /^(\+\d{1,3}[ ])?(\d{1,4}[- ]?){2,}$/,
+        /^(\+\d{1,3}[ ,.-])?(\d{1,4}[- ,.]?){2,}$/,
         "Numer telefonu jest nieprawidłowy."
       )
       .refine(
@@ -98,7 +98,7 @@ export const appointmentFormSchema = z
           const digitsOnly = val.replace(/[^\d]/g, "");
           let countryCode = "";
           if (val.includes("+")) {
-            const endOfCountryCodeIndex = val.search(/[-\s]/);
+            const endOfCountryCodeIndex = val.search(/[-\s,.]/);
             if (endOfCountryCodeIndex !== -1) {
               countryCode = val.slice(1, endOfCountryCodeIndex); // Extract digits after +
             } else {

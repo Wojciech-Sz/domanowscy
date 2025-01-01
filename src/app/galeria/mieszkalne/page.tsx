@@ -14,7 +14,10 @@ const Mieszkalne = () => {
       </Hero>
       <section className="section section-container section-pb section-pt-small">
         <Separator className="separator" />
-        <ProjectsGallery projectsImages={homesImages} />
+        <ProjectsGallery
+          projectsImages={homesImages}
+          projectType="mieszkalne"
+        />
       </section>
     </>
   );

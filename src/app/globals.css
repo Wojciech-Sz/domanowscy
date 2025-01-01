@@ -128,6 +128,28 @@
     @apply relative flex w-full items-center justify-center overflow-hidden portrait:h-[clamp(150px,20svh,250px)] md:portrait:h-[clamp(250px,20svh,350px)] landscape:h-[clamp(220px,30svh,320px)] xl:landscape:h-[clamp(250px,35svh,350px)];
   }
 
+  /* 3d-card */
+  .card-3d {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+  }
+
+  .card-3d > * {
+    transform-style: preserve-3d;
+  }
+
+  .card-title {
+    @apply text-2xl font-bold font-museoSansCyrl;
+  }
+
+  .card-subtitle {
+    @apply text-xl italic text-muted-foreground font-museoSansCyrl;
+  }
+
+  .card-description {
+    @apply text-lg font-montserrat leading-none py-1 pr-1;
+  }
+
   /* Svg Background */
   .svgBg {
     @apply absolute inset-x-0 bottom-0 top-0 z-[0] grid grid-cols-[repeat(10,1fr)] md:grid-cols-[repeat(16,1fr)] lg:grid-cols-[repeat(22,1fr)];
@@ -192,3 +214,5 @@
 .react-datepicker__time-list-item--selected {
   background-color: hsl(var(--primary)) !important;
 }
+
+/* 3D Card  */

@@ -142,3 +142,39 @@ export const appointments = [
     },
   },
 ];
+
+export const approach = {
+  mieszkalne: {
+    title: "Nasze podejście",
+    subtitle: "Budynki mieszkalne",
+    description: [
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+    ],
+  },
+  wnętrza: {
+    title: "Nasze podejście",
+    subtitle: "Wnętrza",
+    description: [
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratiodne cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsumdd, dolor sit amet consectetur adipisicidng elit. Quam sapiednte omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consecdtetur adipisicing elit. Quam sdapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+    ],
+  },
+  usługowe: {
+    title: "Nasze podejście",
+    subtitle: "Budynki usługowe",
+    description: [
+      "Loraem ipsum, dolor sit amet consectetur adipisaicing elit. Quam sapiente omnias ratione cum doloremque caumque provident iure minima aliquid voluptas.",
+      "Lorem ipasum, dolor sit aamet consectetur adipisicing elit. Quam sapientaae omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Loraem ipsum, dolor sit amet consectetur adipisiacing elit. Quam sapiente omnis ratione cuma doloremque cumque proviaadent iure minima aliquid voluptas.",
+    ],
+  },
+};

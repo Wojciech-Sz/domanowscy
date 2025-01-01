@@ -14,7 +14,10 @@ const Wnetrza = () => {
       </Hero>
       <section className="section section-container section-pb section-pt-small">
         <Separator className="separator" />
-        <ProjectsGallery projectsImages={interiorsImages} />
+        <ProjectsGallery
+          projectsImages={interiorsImages}
+          projectType="wnętrza"
+        />
       </section>
     </>
   );

@@ -14,7 +14,10 @@ const Uslugowe = () => {
       </Hero>
       <section className="section section-container section-pb section-pt-small">
         <Separator className="separator" />
-        <ProjectsGallery projectsImages={officesImages} />
+        <ProjectsGallery
+          projectsImages={officesImages}
+          projectType="usługowe"
+        />
       </section>
     </>
   );

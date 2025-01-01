@@ -16,7 +16,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
-import { contactFormSchema } from "@/lib/validations";
+import { sendEmail } from "@/lib/actions/email.action";
+import { ContactFormSchema } from "@/lib/validations";
 
 import { Button } from "../ui/button";
 import { Checkbox } from "../ui/checkbox";
@@ -32,39 +33,29 @@ const ContactForm = () => {
     message: "",
     agree: false,
   };
-  const form = useForm<z.infer<typeof contactFormSchema>>({
-    resolver: zodResolver(contactFormSchema),
+  const form = useForm<z.infer<typeof ContactFormSchema>>({
+    resolver: zodResolver(ContactFormSchema),
     defaultValues: { ...initialValues },
   });
   const [isPending, startTransition] = useTransition();
 
-  const onSubmit = async (values: z.infer<typeof contactFormSchema>) => {
+  const handleSendEmail = async (data: z.infer<typeof ContactFormSchema>) => {
     startTransition(async () => {
-      const response = await fetch("/api/send/contact", {
-        method: "POST",
-        cache: "no-store",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      });
+      const result = await sendEmail(data);
 
-      const data = await response.json();
-      console.log("fetch response:", data);
-      const message = data.error
-        ? {
-            title: "Wiadomość nie została wysłana",
-            variant: "destructive" as const,
-          }
-        : {
-            title: "Wiadomość została wysłana",
-            variant: "default" as const,
-          };
-
-      form.reset();
-      toast({
-        ...message,
-      });
+      if (result.success) {
+        toast({
+          title: "Sukces",
+          description: "Wiadomość została wysłana pomyślnie",
+        });
+        form.reset();
+      } else {
+        toast({
+          title: "Błąd",
+          description: "Wiadomość nie została wysłana",
+          variant: "destructive",
+        });
+      }
     });
   };
 
@@ -73,7 +64,7 @@ const ContactForm = () => {
       <Form {...form}>
         <form
           className="flex flex-col gap-3 font-montserrat"
-          onSubmit={form.handleSubmit(onSubmit)}
+          onSubmit={form.handleSubmit(handleSendEmail)}
         >
           {/* Imię */}
           <FormField

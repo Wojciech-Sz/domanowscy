@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/sections/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 import { montserrat, museoSansCyrl } from "./fonts";
 
@@ -91,6 +92,7 @@ export default function RootLayout({
           </section>
           <Footer />
         </main>
+        <Toaster />
       </body>
     </html>
   );

@@ -9,7 +9,7 @@ const Contact = () => {
     <section className="section section-pt-small relative gap-9 pb-14 md:pb-20">
       <div className="z-[1] flex flex-col gap-1">
         <h2 className="section-title text-center">Kontakt</h2>
-        <p className="w-full max-w-[60ch] text-center font-museoSansCyrl text-lg/none sm:text-xl/none md:text-xl/none">
+        <p className="w-full max-w-[60ch] text-center font-museoSansCyrl text-lg/none sm:text-xl/none lg:text-2xl/none">
           Nasze biuro stacjonarne mieści się w Białymstoku. Projekty realizujemy
           na terenie całego kraju oraz poza jego granicami.
         </p>

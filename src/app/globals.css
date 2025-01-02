@@ -54,7 +54,7 @@
 
 @layer utilities {
   .btn {
-    @apply py-0 font-museoSansCyrl tracking-tighter font-bold h-7 uppercase px-2 text-lg sm:text-xl/none;
+    @apply px-1 py-0 font-museoSansCyrl tracking-tighter font-bold h-7 uppercase sm:px-2 text-lg sm:text-xl/none;
   }
 
   .btn-contact {

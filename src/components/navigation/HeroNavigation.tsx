@@ -22,11 +22,11 @@ const GalleryHeroTitle = ({ title }: { title: string }) => {
           <ChevronDown
             id="chevron"
             onMouseDown={() => handleClick()}
-            className="relative -top-2 z-[1] size-8 translate-x-[.5px] cursor-pointer transition-transform duration-300 hover:translate-y-2 hover:scale-125 xs:translate-x-[2.5px] sm:size-10 sm:translate-x-0 lg:size-14"
+            className="relative -top-2 z-[1] size-8 cursor-pointer transition-transform duration-300 hover:translate-y-2.5 hover:scale-125 sm:size-10 lg:size-14"
           />
         </div>
         <div
-          className={`relative -top-3 flex w-max translate-x-[-2.5px] justify-center gap-1 transition-all duration-300 sm:translate-x-[-2.5px] sm:gap-2 md:w-full md:translate-x-[-3.5px] md:justify-between md:px-5 lg:-translate-x-2.5 lg:px-10 ${isDown ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
+          className={`relative flex w-max translate-x-[0.5625rem] justify-center gap-1 transition-all duration-300 xs:translate-x-2.5 sm:translate-x-[0.8rem] sm:gap-2 md:w-full md:translate-x-[0.88rem] md:justify-between md:px-5 lg:px-10 ${isDown ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
         >
           {ROUTES.PROJECTS.map((link, i) => (
             <div key={link.name} className="flex items-center gap-1 sm:gap-2">
@@ -40,7 +40,7 @@ const GalleryHeroTitle = ({ title }: { title: string }) => {
               </Link>
               <Separator
                 orientation="vertical"
-                className={`${ROUTES.PROJECTS.length - 1 === i ? "h-0" : "h-7 xs:h-5 sm:h-6 md:h-7"} border-l-2 border-white/70 lg:hidden`}
+                className={`${ROUTES.PROJECTS.length - 1 === i ? "h-0" : "h-7 "} border-l-2 border-white lg:hidden`}
               />
             </div>
           ))}

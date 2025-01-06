@@ -79,14 +79,14 @@ const Card3D: React.FC<Card3DProps> = ({ projectType }) => {
   return (
     <div
       ref={cardRef}
-      className="card-3d relative flex aspect-[7/10] size-full max-h-[70vh] cursor-default flex-col gap-6 bg-background p-6 hover:shadow-2xl"
+      className="card-3d img-size relative flex cursor-default flex-col gap-6 bg-background p-6 hover:shadow-2xl"
     >
       <div className="flex h-full flex-col gap-4 overflow-hidden">
         <div className="flex flex-col gap-2">
           <h3 className="card-title">{approach[projectType].title}</h3>
           <h4 className="card-subtitle">{approach[projectType].subtitle}</h4>
         </div>
-        <div className="flex max-h-[90%] flex-col gap-2 overflow-auto">
+        <div className="flex flex-col gap-2 overflow-auto">
           {approach[projectType].description.map((desc, index) => (
             <p key={index} className="card-description">
               {desc}
@@ -98,7 +98,7 @@ const Card3D: React.FC<Card3DProps> = ({ projectType }) => {
         <DialogTrigger className="self-end">
           <ShimmerButton text="Dowiedz się więcej" />
         </DialogTrigger>
-        <DialogContent className="aspect-[7/10] h-full max-h-[70vh] overflow-hidden">
+        <DialogContent className="img-size overflow-hidden">
           <DialogHeader>
             <DialogTitle className="card-title">
               {approach[projectType].title}

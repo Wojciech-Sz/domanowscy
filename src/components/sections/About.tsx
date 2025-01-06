@@ -11,7 +11,7 @@ const About = () => {
       <div className="section-container">
         <div>
           <h2 className="section-title">O Nas</h2>
-          <Separator className="border-b-2 border-foreground" />
+          <Separator className="separator" />
         </div>
         <div className="section-grid">
           {aboutImages.map(({ image, name, position }) => (
@@ -24,7 +24,7 @@ const About = () => {
                 alt={name}
                 width={1000}
                 height={1000}
-                className="aspect-[7/10] max-h-[70vh] w-full object-cover"
+                className="img-size object-cover"
               />
 
               <div className="tracking-tighter">

@@ -4,9 +4,8 @@ import { gsap } from "gsap";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
-import { socialMedia } from "@/constants";
-
 import NavLinks from "./NavLinks";
+import SocialLinks from "./SocialLinks";
 import MenuIcon from "../icons/MenuIcon";
 import { Button } from "../ui/button";
 
@@ -110,20 +109,8 @@ const Navbar = () => {
           Domanowscy
         </Link>
         <div className="flex items-center gap-5">
-          <div className="hidden gap-2 sm:flex">
-            {socialMedia.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                title={item.name}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center hover:text-secondary"
-              >
-                {item.icon}
-              </Link>
-            ))}
-          </div>
+          <SocialLinks className="hidden gap-2 sm:flex" />
+
           <Link
             scroll
             href="/#contact"
@@ -135,7 +122,7 @@ const Navbar = () => {
         </div>
       </div>
       <section
-        className={`absolute inset-x-0 flex flex-col justify-between gap-5 overflow-hidden bg-background/90 px-5 font-museoSansCyrl uppercase shadow-md transition-all duration-300 ease-in-out sm:px-10 ${isOpen ? "max-h-screen" : "max-h-0"}`}
+        className={`navbar-links_container ${isOpen ? "max-h-[70vh]" : "max-h-0"}`}
       >
         <NavLinks closeMenu={toggleMenu} />
       </section>

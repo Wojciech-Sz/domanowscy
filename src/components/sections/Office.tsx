@@ -12,7 +12,7 @@ const Office = () => {
       <div className="section-container">
         <div>
           <h2 className="section-title">Pracownia</h2>
-          <Separator className="border-b-2 border-foreground" />
+          <Separator className="separator" />
         </div>
         <div className="section-gap grid h-min w-full grid-cols-1 lg:grid-cols-2">
           <div className="relative size-full overflow-hidden max-lg:h-[500px] max-lg:max-h-[70vh]">
@@ -45,7 +45,7 @@ const Office = () => {
             </p>
           </div>
         </div>
-        <Separator className="w-0 border-b-2 border-foreground md:w-full" />
+        <Separator className="separator w-0 md:w-full" />
         {office.map((question) => (
           <article
             key={question.title}
@@ -55,7 +55,7 @@ const Office = () => {
               {question.title}
             </h4>
             <div className="section-gap flex flex-col items-center font-montserrat text-base/snug md:flex-row lg:text-lg/snug">
-              <Separator className="border-b-2 border-foreground md:h-full md:w-0 md:border-l-2" />
+              <Separator className="separator md:h-full md:w-0 md:border-l-2" />
               <div className="section-gap flex flex-col md:py-4">
                 {question.info.map((info) => (
                   <div key={info.title} className="text-pretty">

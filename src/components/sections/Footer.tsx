@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-import { socialMedia } from "@/constants";
+import SocialLinks from "../navigation/SocialLinks";
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
           title="Domanowscy"
           scroll
         >
-          <span className="text-2xl/none  font-bold">Domanowscy</span>
+          <span className="text-2xl/none font-bold">Domanowscy</span>
         </Link>
         <p className="block text-center leading-none sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2">
           © {new Date().getFullYear()} Domanowscy.
@@ -22,24 +22,7 @@ const Footer = () => {
           Wszelkie prawa zastrzeżone.
         </p>
 
-        <ul className="flex gap-2">
-          {socialMedia.map((link, i) => (
-            <li
-              key={link.name + i}
-              className="flex size-full text-white hover:text-primary"
-            >
-              <a
-                href={link.href}
-                target="_blank"
-                rel="noreferrer"
-                title={link.name}
-              >
-                {link.icon}
-                <span className="sr-only">{link.name}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
+        <SocialLinks className="flex gap-2" />
       </div>
     </footer>
   );

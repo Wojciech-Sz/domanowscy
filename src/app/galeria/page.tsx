@@ -12,9 +12,11 @@ const Gallery = () => {
       <Hero className="hero-gallery" heroImages={galleryHeroImages}>
         <HeroNavigation title="Galeria" />
       </Hero>
-      <section className="section section-container section-pb section-pt-small">
-        <Separator className="separator" />
-        <ProjectsGallery projectsImages={galleryImages} />
+      <section className="section section-pb section-pt-small">
+        <div className="section-container">
+          <Separator className="separator" />
+          <ProjectsGallery projectsImages={galleryImages} />
+        </div>
       </section>
     </>
   );

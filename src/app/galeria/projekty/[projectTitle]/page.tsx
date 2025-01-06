@@ -27,14 +27,14 @@ const ProjectGallery = async ({ params }: ProjectGalleryProps) => {
           <Separator className="separator" />
         </div>
         <div className="section-gap grid w-full grid-cols-1 md:grid-flow-row-dense md:grid-cols-2 2xl:grid-cols-3">
-          {projectImages.flatMap((image, i) => (
+          {projectImages.map((image, i) => (
             <Image
               src={image.imgUrl}
               alt={projectTitle}
               width={image.width}
               height={image.height}
               key={projectTitle + i}
-              className="aspect-[7/10] size-full max-h-[80vh] object-cover md:odd:col-span-2 2xl:[&:nth-child(2)]:col-span-3"
+              className="img-size object-cover md:odd:col-span-2 2xl:[&:nth-child(2)]:col-span-3"
             />
           ))}
         </div>

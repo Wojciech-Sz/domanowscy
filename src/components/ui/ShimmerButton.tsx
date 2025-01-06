@@ -15,10 +15,7 @@ const ShimmerButton = ({ text }: { text: string }) => {
     });
   });
   return (
-    <div
-      ref={shimmer}
-      className="inline-flex h-12 w-max items-center justify-center overflow-hidden border border-border bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%] px-6 text-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-    >
+    <div ref={shimmer} className="shimmer">
       {text}
     </div>
   );

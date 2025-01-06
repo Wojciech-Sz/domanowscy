@@ -22,17 +22,17 @@ const GalleryHeroTitle = ({ title }: { title: string }) => {
           <ChevronDown
             id="chevron"
             onMouseDown={() => handleClick()}
-            className="relative -top-2 z-[1] size-8 cursor-pointer transition-transform duration-300 hover:translate-y-2.5 hover:scale-125 sm:size-10 lg:size-14"
+            className="hero-navigation-chevron"
           />
         </div>
         <div
-          className={`relative flex w-max translate-x-[0.5625rem] justify-center gap-1 transition-all duration-300 xs:translate-x-2.5 sm:translate-x-[0.8rem] sm:gap-2 md:w-full md:translate-x-[0.88rem] md:justify-between md:px-5 lg:px-10 ${isDown ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
+          className={`hero-navigation-links_container ${isDown ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
         >
           {ROUTES.PROJECTS.map((link, i) => (
             <div key={link.name} className="flex items-center gap-1 sm:gap-2">
               <Link
                 href={link.href}
-                className="group w-min text-center font-museoSansCyrl text-sm/none font-light uppercase tracking-tighter xs:w-auto  xs:text-base sm:text-lg/none md:text-xl/none xl:text-2xl/none"
+                className="hero-navigation-link group"
                 title={link.name}
               >
                 {link.name}

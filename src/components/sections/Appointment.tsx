@@ -9,7 +9,7 @@ const Appointment = () => {
   return (
     <section
       id="contact"
-      className="flex min-h-max  w-full flex-col items-center justify-center gap-6 py-52"
+      className="flex min-h-max w-full flex-col items-center justify-center gap-6 py-52"
     >
       <div
         style={{

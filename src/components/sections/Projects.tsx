@@ -23,13 +23,13 @@ const Projects = () => {
             </Button>
           </div>
           <div
-            className={`flex w-max justify-center gap-1 self-center transition-all duration-300 sm:gap-2 md:w-full md:justify-between md:px-5 lg:px-10 ${visible ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
+            className={`projects-links_container ${visible ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
           >
             {ROUTES.PROJECTS.map((link, i) => (
               <div key={link.name} className="flex items-center gap-1 sm:gap-2">
                 <Link
                   href={link.href}
-                  className="group w-min text-center font-museoSansCyrl text-sm/none font-light uppercase tracking-tighter xs:w-auto xs:text-base sm:text-lg/none md:text-xl/none xl:text-2xl/none"
+                  className="projects-link group"
                   title={link.name}
                 >
                   {link.name}
@@ -42,7 +42,7 @@ const Projects = () => {
               </div>
             ))}
           </div>
-          <Separator className="border-b-2 border-foreground" />
+          <Separator className="separator" />
         </div>
 
         <ProjectsGallery projectsImages={projectsImages} />

@@ -1,22 +1,21 @@
 import Link from "next/link";
 import React from "react";
 
-import { navLinks, socialMedia } from "@/constants";
+import { navLinks } from "@/constants";
 import ROUTES from "@/constants/routes";
+
+import SocialLinks from "./SocialLinks";
 
 const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
   return (
     <>
-      <ul className="mx-auto flex w-full max-w-7xl flex-col justify-between gap-4 pb-5 lg:max-w-7xl lg:flex-row">
+      <ul className="section-container mx-auto justify-between pb-5 md:flex-row">
         {navLinks.map(({ href, name }) =>
           name === "Realizacje" ? (
-            <li
-              className="flex h-full flex-col gap-2 tracking-tighter"
-              key={name}
-            >
+            <li className="flex flex-col gap-3" key={name}>
               <Link
                 href={href}
-                className="group w-max text-2xl font-bold"
+                className="nav-link group"
                 prefetch={false}
                 scroll
                 onClick={closeMenu}
@@ -25,9 +24,9 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
 
                 <div className="animated-border separator" />
               </Link>
-              <ul className="flex flex-col gap-2 text-xl">
+              <ul className="flex flex-col gap-2 text-lg/none tracking-tighter lg:text-xl/none">
                 {ROUTES.PROJECTS.map(({ href, name }) => (
-                  <li className="group h-full w-max" key={name}>
+                  <li className="group w-max" key={name}>
                     <Link href={href} onClick={closeMenu}>
                       {name}
                       <div className="animated-border separator" />
@@ -37,10 +36,7 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
               </ul>
             </li>
           ) : (
-            <li
-              key={name}
-              className="group h-full w-max text-2xl font-bold tracking-tighter"
-            >
+            <li key={name} className="nav-link group h-full">
               <Link href={href} onClick={closeMenu}>
                 {name}
                 <div className="animated-border separator" />
@@ -48,20 +44,7 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
             </li>
           )
         )}
-        <div className="flex gap-2 sm:hidden">
-          {socialMedia.map(({ href, name, icon }) => (
-            <Link
-              key={name}
-              href={href}
-              target="_blank"
-              title={name}
-              rel="noopener noreferrer"
-              className="flex items-center justify-center text-foreground hover:text-secondary"
-            >
-              {icon}
-            </Link>
-          ))}
-        </div>
+        <SocialLinks className="flex gap-2 sm:hidden" />
       </ul>
     </>
   );

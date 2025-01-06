@@ -12,12 +12,14 @@ const Uslugowe = () => {
       <Hero className="hero-gallery" heroImages={officesHeroImages}>
         <HeroNavigation title="Usługowe" />
       </Hero>
-      <section className="section section-container section-pb section-pt-small">
-        <Separator className="separator" />
-        <ProjectsGallery
-          projectsImages={officesImages}
-          projectType="usługowe"
-        />
+      <section className="section section-pb section-pt-small">
+        <div className="section-container">
+          <Separator className="separator" />
+          <ProjectsGallery
+            projectsImages={officesImages}
+            projectType="usługowe"
+          />
+        </div>
       </section>
     </>
   );

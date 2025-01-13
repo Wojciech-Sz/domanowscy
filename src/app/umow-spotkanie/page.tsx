@@ -5,9 +5,15 @@ import AppointmentForm from "@/components/forms/AppointmentForm";
 import { appointments } from "@/constants";
 
 export const metadata: Metadata = {
-  title: "Konsultacje",
+  title: "Umów spotkanie",
   description:
     "Umów się na konsultacje. Wypełnij prosty formularz i zarezerwuj termin spotkania w naszym biurze. ",
+  alternates: {
+    canonical: "https://white-hill-two.vercel.app/umow-spotkanie",
+  },
+  openGraph: {
+    url: "https://white-hill-two.vercel.app/umow-spotkanie",
+  },
 };
 
 const Appointment = () => {

@@ -18,7 +18,7 @@ const GalleryHeroTitle = ({ title }: { title: string }) => {
       <div className="grid w-max grid-rows-[1fr_auto_1fr] justify-center lg:w-full lg:justify-normal">
         <div />
         <div className="flex flex-col items-center justify-center">
-          <h2 className="section-title">{title}</h2>
+          <h1 className="section-title">{title}</h1>
           <ChevronDown
             id="chevron"
             onMouseDown={() => handleClick()}

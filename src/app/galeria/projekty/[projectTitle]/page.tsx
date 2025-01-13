@@ -3,11 +3,34 @@ import React from "react";
 
 import { Separator } from "@/components/ui/separator";
 import { galleryImages } from "@/constants/gallery";
+import { Metadata, ResolvingMetadata } from "next";
 
 interface ProjectGalleryProps {
   params: Promise<{
     projectTitle: string;
   }>;
+}
+
+export async function generateMetadata(props: {
+  params: Promise<{
+    projectTitle: string;
+  }>;
+  parent: ResolvingMetadata;
+}): Promise<Metadata> {
+  const params = await props.params;
+
+  const { projectTitle } = params;
+
+  return {
+    title: projectTitle,
+    description: `${projectTitle} - Kompleksowa galeria zdjęć.`,
+    alternates: {
+      canonical: `https://white-hill-two.vercel.app/galeria/projekty/${projectTitle}`,
+    },
+    openGraph: {
+      url: `https://white-hill-two.vercel.app/galeria/projekty/${projectTitle}`,
+    },
+  };
 }
 
 const ProjectGallery = async ({ params }: ProjectGalleryProps) => {
@@ -23,7 +46,7 @@ const ProjectGallery = async ({ params }: ProjectGalleryProps) => {
       <div id="hero" className="absolute -top-16" />
       <div className="section-container">
         <div>
-          <h2 className="section-title">{project?.title}</h2>
+          <h1 className="section-title">{project?.title}</h1>
           <Separator className="separator" />
         </div>
         <div className="section-gap grid w-full grid-cols-1 md:grid-flow-row-dense md:grid-cols-2 2xl:grid-cols-3">

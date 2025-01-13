@@ -5,6 +5,18 @@ import ProjectsGallery from "@/components/ProjectsGallery";
 import Hero from "@/components/sections/Hero";
 import { Separator } from "@/components/ui/separator";
 import { interiorsHeroImages, interiorsImages } from "@/constants/gallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Wnętrza",
+  description: "Galeria naszych najlepszych projektów wnętrz.",
+  alternates: {
+    canonical: "https://white-hill-two.vercel.app/galeria/wnetrza",
+  },
+  openGraph: {
+    url: "https://white-hill-two.vercel.app/galeria/wnetrza",
+  },
+};
 
 const Wnetrza = () => {
   return (

@@ -17,7 +17,7 @@ const Office = () => {
         <div className="section-gap grid h-min w-full grid-cols-1 lg:grid-cols-2">
           <div className="relative size-full overflow-hidden max-lg:h-[500px] max-lg:max-h-[70vh]">
             <Image
-              src="https://utfs.io/f///cdaa3749-c2a3-4fb8-bea3-f14fbe6e2a18-njtigs.jpg"
+              src="https://utfs.io/f/cdaa3749-c2a3-4fb8-bea3-f14fbe6e2a18-njtigs.jpg"
               alt="Pracownia"
               width={1000}
               height={1000}

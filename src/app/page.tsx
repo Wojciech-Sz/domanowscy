@@ -5,6 +5,16 @@ import Hero from "@/components/sections/Hero";
 import Office from "@/components/sections/Office";
 import Projects from "@/components/sections/Projects";
 import { heroImages } from "@/constants/gallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://white-hill-two.vercel.app/",
+  },
+  openGraph: {
+    url: "https://white-hill-two.vercel.app/",
+  },
+};
 
 export default function Home() {
   return (

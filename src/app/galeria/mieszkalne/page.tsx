@@ -5,6 +5,15 @@ import ProjectsGallery from "@/components/ProjectsGallery";
 import Hero from "@/components/sections/Hero";
 import { Separator } from "@/components/ui/separator";
 import { homesHeroImages, homesImages } from "@/constants/gallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mieszkalne",
+  description: "Galeria naszych najlepszych projektów budynków mieszkalnych.",
+  alternates: {
+    canonical: "https://white-hill-two.vercel.app/galeria/mieszkalne",
+  },
+};
 
 const Mieszkalne = () => {
   return (

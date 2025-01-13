@@ -11,9 +11,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://white-hill-two.vercel.app/",
   },
-  openGraph: {
-    url: "https://white-hill-two.vercel.app/",
-  },
 };
 
 export default function Home() {

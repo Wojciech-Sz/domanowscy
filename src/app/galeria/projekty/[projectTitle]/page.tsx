@@ -29,6 +29,25 @@ export async function generateMetadata(props: {
     },
     openGraph: {
       url: `https://white-hill-two.vercel.app/galeria/projekty/${projectTitle}`,
+      siteName: "Domanowscy Architekci",
+      images: [
+        {
+          url: "https://white-hill-two.vercel.app/Domanowscy.webp",
+          alt: `Domanowscy Architekci | ${projectTitle}`,
+          width: 1200,
+          height: 630,
+        },
+      ],
+      type: "website",
+      locale: "pl_PL",
+    },
+    twitter: {
+      images: [
+        {
+          url: "https://white-hill-two.vercel.app/Domanowscy.webp",
+          alt: `Domanowscy Architekci | ${projectTitle}`,
+        },
+      ],
     },
   };
 }

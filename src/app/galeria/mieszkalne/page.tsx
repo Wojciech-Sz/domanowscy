@@ -13,6 +13,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://white-hill-two.vercel.app/galeria/mieszkalne",
   },
+  openGraph: {
+    url: "https://white-hill-two.vercel.app/galeria/mieszkalne",
+    siteName: "Domanowscy Architekci",
+    images: [
+      {
+        url: "https://white-hill-two.vercel.app/Mieszkalne.webp",
+        alt: "Domanowscy Architekci | Mieszkalne",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+    locale: "pl_PL",
+  },
+  twitter: {
+    images: [
+      {
+        url: "https://white-hill-two.vercel.app/Mieszkalne.webp",
+        alt: "Domanowscy Architekci | Mieszkalne",
+      },
+    ],
+  },
 };
 
 const Mieszkalne = () => {

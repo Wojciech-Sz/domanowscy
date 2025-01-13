@@ -11,7 +11,6 @@ const Footer = () => {
           href="/"
           prefetch={false}
           className="flex items-center justify-center"
-          title="Domanowscy"
           scroll
         >
           <span className="text-2xl/none font-bold">Domanowscy</span>

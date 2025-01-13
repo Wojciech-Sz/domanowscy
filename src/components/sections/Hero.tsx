@@ -66,7 +66,6 @@ const Hero = ({ heroImages, className, children }: HeroProps) => {
           src={image.imgUrl}
           alt={image.id}
           priority
-          title="Hero image"
           width={1920}
           height={1080}
           className={`absolute size-full object-cover object-bottom ${

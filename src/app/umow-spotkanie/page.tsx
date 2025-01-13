@@ -13,6 +13,25 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: "https://white-hill-two.vercel.app/umow-spotkanie",
+    siteName: "Domanowscy Architekci",
+    images: [
+      {
+        url: "https://white-hill-two.vercel.app/Spotkanie.webp",
+        alt: "Domanowscy Architekci | Umów spotkanie",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+    locale: "pl_PL",
+  },
+  twitter: {
+    images: [
+      {
+        url: "https://white-hill-two.vercel.app/Spotkanie.webp",
+        alt: "Domanowscy Architekci | Umów spotkanie",
+      },
+    ],
   },
 };
 

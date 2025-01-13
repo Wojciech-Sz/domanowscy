@@ -16,6 +16,25 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: "https://white-hill-two.vercel.app/galeria",
+    siteName: "Domanowscy Architekci",
+    images: [
+      {
+        url: "https://white-hill-two.vercel.app/Galeria.webp",
+        alt: "Domanowscy Architekci | Galeria",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+    locale: "pl_PL",
+  },
+  twitter: {
+    images: [
+      {
+        url: "https://white-hill-two.vercel.app/Galeria.webp",
+        alt: "Domanowscy Architekci | Galeria",
+      },
+    ],
   },
 };
 

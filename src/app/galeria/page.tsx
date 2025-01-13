@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     locale: "pl_PL",
   },
   twitter: {
+    card: "summary",
     images: [
       {
         url: "https://white-hill-two.vercel.app/Galeria.webp",

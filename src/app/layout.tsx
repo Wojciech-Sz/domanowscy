@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     locale: "pl_PL",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Domanowscy Architekci | Budynki & Wnętrza",
     description:
       "Kompleksowe usługi architektoniczne dla budynów i wnętrz dostosowane do Twoich potrzeb.",

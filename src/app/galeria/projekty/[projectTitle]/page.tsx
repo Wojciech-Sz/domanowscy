@@ -20,6 +20,11 @@ export async function generateMetadata(props: {
   const params = await props.params;
 
   const { projectTitle } = params;
+  const project = galleryImages.find(
+    (project) => project.route === projectTitle
+  );
+  const imgUrl =
+    project?.imgUrl || "https://white-hill-two.vercel.app/Domanowscy.webp";
 
   return {
     title: projectTitle,
@@ -32,7 +37,7 @@ export async function generateMetadata(props: {
       siteName: "Domanowscy Architekci",
       images: [
         {
-          url: "https://white-hill-two.vercel.app/Domanowscy.webp",
+          url: imgUrl,
           alt: `Domanowscy Architekci | ${projectTitle}`,
           width: 1200,
           height: 630,
@@ -42,9 +47,10 @@ export async function generateMetadata(props: {
       locale: "pl_PL",
     },
     twitter: {
+      card: "summary",
       images: [
         {
-          url: "https://white-hill-two.vercel.app/Domanowscy.webp",
+          url: imgUrl,
           alt: `Domanowscy Architekci | ${projectTitle}`,
         },
       ],

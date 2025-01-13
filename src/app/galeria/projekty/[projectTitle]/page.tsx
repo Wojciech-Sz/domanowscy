@@ -4,6 +4,7 @@ import React from "react";
 import { Separator } from "@/components/ui/separator";
 import { galleryImages } from "@/constants/gallery";
 import { Metadata, ResolvingMetadata } from "next";
+import { notFound } from "next/navigation";
 
 interface ProjectGalleryProps {
   params: Promise<{
@@ -23,8 +24,18 @@ export async function generateMetadata(props: {
   const project = galleryImages.find(
     (project) => project.route === projectTitle
   );
+  if (!project)
+    return {
+      title: {
+        absolute: "Strona nie istnieje",
+      },
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
   const imgUrl =
-    project?.imgUrl || "https://white-hill-two.vercel.app/Domanowscy.webp";
+    project.imgUrl || "https://white-hill-two.vercel.app/Domanowscy.webp";
 
   return {
     title: projectTitle,
@@ -64,7 +75,9 @@ const ProjectGallery = async ({ params }: ProjectGalleryProps) => {
   const project = galleryImages.find(
     (project) => project.route === projectTitle
   );
-  const projectImages = project?.images || [];
+  if (!project) return notFound();
+
+  const projectImages = project.images;
 
   return (
     <section className="section section-pb section-pt-small relative">

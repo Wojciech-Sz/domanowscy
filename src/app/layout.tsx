@@ -12,49 +12,6 @@ export const metadata: Metadata = {
     default: "Domanowscy Architekci | Budynki & Wnętrza",
     template: "Domanowscy Architekci | %s",
   },
-  description:
-    "Oferujemy kompleksowe usługi architektoniczne obejmujące projektowanie całych obiektów oraz aranżację wnętrz. Stawiamy na funkcjonalność i estetykę.",
-  keywords: [
-    "budynki",
-    "wnętrza",
-    "Domanowscy Architekci",
-    "budynki mieszkalne",
-    "budynki usługowe",
-    "architekt białystok",
-    "architekt polska",
-    "architektura",
-    "architekt",
-    "architekt wnętrz",
-  ],
-  openGraph: {
-    title: "Domanowscy Architekci | Budynki & Wnętrza",
-    description:
-      "Kompleksowe usługi architektoniczne dla budynków i wnętrz dostosowane do Twoich potrzeb.",
-    url: "https://white-hill-two.vercel.app/",
-    siteName: "Domanowscy Architekci",
-    images: [
-      {
-        url: "https://white-hill-two.vercel.app/Domanowscy.webp",
-        alt: "Domanowscy Architekci | Budynki & Wnętrza",
-        width: 1200,
-        height: 630,
-      },
-    ],
-    type: "website",
-    locale: "pl_PL",
-  },
-  twitter: {
-    card: "summary",
-    title: "Domanowscy Architekci | Budynki & Wnętrza",
-    description:
-      "Kompleksowe usługi architektoniczne dla budynów i wnętrz dostosowane do Twoich potrzeb.",
-    images: [
-      {
-        url: "https://white-hill-two.vercel.app/Domanowscy.webp",
-        alt: "Domanowscy Architekci | Budynki & Wnętrza",
-      },
-    ],
-  },
 
   robots: {
     index: true,

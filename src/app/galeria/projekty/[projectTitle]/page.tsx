@@ -27,11 +27,16 @@ export async function generateMetadata(props: {
   if (!project)
     return {
       title: {
+        default: "Strona nie istnieje",
         absolute: "Strona nie istnieje",
       },
       robots: {
         index: false,
-        follow: false,
+        follow: true,
+        googleBot: {
+          index: false,
+          follow: true,
+        },
       },
     };
   const imgUrl =

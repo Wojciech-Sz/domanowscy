@@ -40,6 +40,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
+      <head>
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="0Zaow7prLExlvy4AJzZyZg"
+          async
+        ></script>
+      </head>
       <body
         className={`${montserrat.className} ${museoSansCyrl.variable} antialiased`}
       >

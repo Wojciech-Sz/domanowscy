@@ -25,9 +25,27 @@ const MenuIcon = ({
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <line ref={topLine} x1="1.2" x2="22.8" y1="4" y2="4" />
-        <line ref={middleLine} x1="1.2" x2="22.8" y1="12" y2="12" />
-        <line ref={bottomLine} x1="1.2" x2="22.8" y1="20" y2="20" />
+        <line
+          ref={topLine}
+          x1="1.2"
+          x2="22.8"
+          y1="4"
+          y2="4"
+        />
+        <line
+          ref={middleLine}
+          x1="1.2"
+          x2="22.8"
+          y1="12"
+          y2="12"
+        />
+        <line
+          ref={bottomLine}
+          x1="1.2"
+          x2="22.8"
+          y1="20"
+          y2="20"
+        />
       </svg>
     </div>
   );

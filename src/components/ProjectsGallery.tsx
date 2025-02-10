@@ -24,7 +24,10 @@ const ProjectsGallery = ({
     <div className="section-grid">
       {projectsImages.map(({ imgUrl, title, route }, i) =>
         projectType && i === 1 ? (
-          <ApproachCard key="3d-card" projectType={projectType} />
+          <ApproachCard
+            key="3d-card"
+            projectType={projectType}
+          />
         ) : (
           <Link
             key={route}

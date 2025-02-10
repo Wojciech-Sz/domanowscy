@@ -29,7 +29,10 @@ const GalleryHeroTitle = ({ title }: { title: string }) => {
           className={`hero-navigation-links_container ${isDown ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
         >
           {ROUTES.PROJECTS.map((link, i) => (
-            <div key={link.name} className="flex items-center gap-1 sm:gap-2">
+            <div
+              key={link.name}
+              className="flex items-center gap-1 sm:gap-2"
+            >
               <Link
                 href={link.href}
                 className="hero-navigation-link group"

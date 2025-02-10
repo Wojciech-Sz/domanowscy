@@ -1,4 +1,10 @@
-import { ClockIcon, MailIcon, Mails, MapPinIcon, Phone } from "lucide-react";
+import {
+  ClockIcon,
+  MailIcon,
+  Mails,
+  MapPinIcon,
+  Phone,
+} from "lucide-react";
 import React from "react";
 
 import ContactForm from "../forms/ContactForm";
@@ -8,10 +14,13 @@ const Contact = () => {
   return (
     <section className="section section-pt-small relative gap-9 pb-14 md:pb-20">
       <div className="z-[1] flex flex-col gap-1">
-        <h2 className="section-title text-center">Kontakt</h2>
+        <h2 className="section-title text-center">
+          Kontakt
+        </h2>
         <p className="w-full max-w-[60ch] text-center font-museoSansCyrl text-lg/none sm:text-xl/none lg:text-2xl/none">
-          Nasze biuro stacjonarne mieści się w Białymstoku. Projekty realizujemy
-          na terenie całego kraju oraz poza jego granicami.
+          Nasze biuro stacjonarne mieści się w Białymstoku.
+          Projekty realizujemy na terenie całego kraju oraz
+          poza jego granicami.
         </p>
       </div>
       <div className="z-[1] flex w-auto flex-col-reverse items-center gap-7 xs:gap-10 lg:flex-row lg:items-start lg:gap-20">
@@ -36,7 +45,10 @@ const Contact = () => {
               rel="noreferrer noopener"
             >
               <div className="contact-link">
-                <MailIcon className="size-5 shrink-0 " strokeWidth="2.5" />
+                <MailIcon
+                  className="size-5 shrink-0 "
+                  strokeWidth="2.5"
+                />
                 biuro@wharchitecture.pl
               </div>
             </a>

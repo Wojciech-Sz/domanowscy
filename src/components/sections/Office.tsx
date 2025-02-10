@@ -29,19 +29,25 @@ const Office = () => {
               Domanowscy Architekci
             </h3>
             <p className="mb-4">
-              to biuro projektowe specjalizujące się w kompleksowym
-              projektowaniu domów, obiektów usługowych oraz przemysłowych. Każdy
-              projekt, który realizujemy, jest unikalną odpowiedzią na potrzeby
-              naszych klientów, łącząc estetykę z funkcjonalnością. Projektujemy
-              wnętrza, które nie tylko zachwycają swoim wyglądem, ale także
-              stają się sceną dla życia codziennego i miejscem narodzin marzeń.
+              to biuro projektowe specjalizujące się w
+              kompleksowym projektowaniu domów, obiektów
+              usługowych oraz przemysłowych. Każdy projekt,
+              który realizujemy, jest unikalną odpowiedzią
+              na potrzeby naszych klientów, łącząc estetykę
+              z funkcjonalnością. Projektujemy wnętrza,
+              które nie tylko zachwycają swoim wyglądem, ale
+              także stają się sceną dla życia codziennego i
+              miejscem narodzin marzeń.
             </p>
             <p>
-              Podczas współpracy z naszymi klientami stawiamy na zaufanie i
-              budowanie partnerskiej relacji. Wierzymy, że najlepsze efekty
-              osiąga się dzięki bliskiej współpracy i otwartości na potrzeby
-              inwestorów. Naszym celem jest tworzenie przestrzeni, które będą
-              inspirować i odpowiadać na wszystkie oczekiwania użytkowników.
+              Podczas współpracy z naszymi klientami
+              stawiamy na zaufanie i budowanie partnerskiej
+              relacji. Wierzymy, że najlepsze efekty osiąga
+              się dzięki bliskiej współpracy i otwartości na
+              potrzeby inwestorów. Naszym celem jest
+              tworzenie przestrzeni, które będą inspirować i
+              odpowiadać na wszystkie oczekiwania
+              użytkowników.
             </p>
           </div>
         </div>
@@ -58,13 +64,18 @@ const Office = () => {
               <Separator className="separator md:h-full md:w-0 md:border-l-2" />
               <div className="section-gap flex flex-col md:py-4">
                 {question.info.map((info) => (
-                  <div key={info.title} className="text-pretty">
+                  <div
+                    key={info.title}
+                    className="text-pretty"
+                  >
                     {info.title && (
                       <span className="text-lg/none font-semibold lg:text-xl/none">
                         {info.title}{" "}
                       </span>
                     )}
-                    <p className="inline tracking-tight">{info.description}</p>
+                    <p className="inline tracking-tight">
+                      {info.description}
+                    </p>
                   </div>
                 ))}
               </div>

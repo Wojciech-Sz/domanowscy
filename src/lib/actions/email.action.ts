@@ -21,10 +21,18 @@ interface EmailParams {
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendEmail(params: EmailParams) {
-  const { firstName, lastName, email, phoneNumber, subject, date, message } =
-    params;
+  const {
+    firstName,
+    lastName,
+    email,
+    phoneNumber,
+    subject,
+    date,
+    message,
+  } = params;
   const name = `${firstName} ${lastName}`;
-  const formattedDate = date && formatDateTime(date).dateTime;
+  const formattedDate =
+    date && formatDateTime(date).dateTime;
 
   try {
     const { data, error } = await resend.emails.send({
@@ -43,7 +51,9 @@ export async function sendEmail(params: EmailParams) {
 
     if (error) {
       logger.error(error);
-      throw new Error("Nie udało się wysłać wiadomości: " + error.message);
+      throw new Error(
+        "Nie udało się wysłać wiadomości: " + error.message
+      );
     }
 
     return {

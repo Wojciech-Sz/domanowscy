@@ -1,10 +1,10 @@
+import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import React from "react";
 
 import { Separator } from "@/components/ui/separator";
 import { galleryImages } from "@/constants/gallery";
-import { Metadata, ResolvingMetadata } from "next";
-import { notFound } from "next/navigation";
 
 interface ProjectGalleryProps {
   params: Promise<{
@@ -40,7 +40,8 @@ export async function generateMetadata(props: {
       },
     };
   const imgUrl =
-    project.imgUrl || "https://white-hill-two.vercel.app/Domanowscy.webp";
+    project.imgUrl ||
+    "https://white-hill-two.vercel.app/Domanowscy.webp";
 
   return {
     title: projectTitle,
@@ -74,7 +75,9 @@ export async function generateMetadata(props: {
   };
 }
 
-const ProjectGallery = async ({ params }: ProjectGalleryProps) => {
+const ProjectGallery = async ({
+  params,
+}: ProjectGalleryProps) => {
   const { projectTitle } = await params;
 
   const project = galleryImages.find(
@@ -89,7 +92,9 @@ const ProjectGallery = async ({ params }: ProjectGalleryProps) => {
       <div id="hero" className="absolute -top-16" />
       <div className="section-container">
         <div>
-          <h1 className="section-title">{project?.title}</h1>
+          <h1 className="section-title">
+            {project?.title}
+          </h1>
           <Separator className="separator" />
         </div>
         <div className="section-gap grid w-full grid-cols-1 md:grid-flow-row-dense md:grid-cols-2 2xl:grid-cols-3">

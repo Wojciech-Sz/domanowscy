@@ -20,6 +20,8 @@ interface Card3DProps {
   projectType: keyof typeof approach;
 }
 
+gsap.registerPlugin(useGSAP);
+
 const Card3D: React.FC<Card3DProps> = ({ projectType }) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -28,7 +30,8 @@ const Card3D: React.FC<Card3DProps> = ({ projectType }) => {
     if (!card) return;
 
     const handleMouseMove = (e: MouseEvent) => {
-      const { left, top, width, height } = card.getBoundingClientRect();
+      const { left, top, width, height } =
+        card.getBoundingClientRect();
       const centerX = left + width / 2;
       const centerY = top + height / 2;
       const mouseX = e.clientX - centerX;
@@ -71,8 +74,14 @@ const Card3D: React.FC<Card3DProps> = ({ projectType }) => {
     card.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
-      card.removeEventListener("mousemove", handleMouseMove);
-      card.removeEventListener("mouseleave", handleMouseLeave);
+      card.removeEventListener(
+        "mousemove",
+        handleMouseMove
+      );
+      card.removeEventListener(
+        "mouseleave",
+        handleMouseLeave
+      );
     };
   }, []);
 
@@ -83,15 +92,21 @@ const Card3D: React.FC<Card3DProps> = ({ projectType }) => {
     >
       <div className="flex h-full flex-col gap-4 overflow-hidden">
         <div className="flex flex-col gap-2">
-          <h3 className="card-title">{approach[projectType].title}</h3>
-          <h4 className="card-subtitle">{approach[projectType].subtitle}</h4>
+          <h3 className="card-title">
+            {approach[projectType].title}
+          </h3>
+          <h4 className="card-subtitle">
+            {approach[projectType].subtitle}
+          </h4>
         </div>
         <div className="flex flex-col gap-2 overflow-auto">
-          {approach[projectType].description.map((desc, index) => (
-            <p key={index} className="card-description">
-              {desc}
-            </p>
-          ))}
+          {approach[projectType].description.map(
+            (desc, index) => (
+              <p key={index} className="card-description">
+                {desc}
+              </p>
+            )
+          )}
         </div>
       </div>
       <Dialog>
@@ -108,11 +123,13 @@ const Card3D: React.FC<Card3DProps> = ({ projectType }) => {
             </DialogDescription>
           </DialogHeader>
           <div className="flex flex-col gap-2 overflow-auto">
-            {approach[projectType].description.map((desc, index) => (
-              <p key={index} className="card-description">
-                {desc}
-              </p>
-            ))}
+            {approach[projectType].description.map(
+              (desc, index) => (
+                <p key={index} className="card-description">
+                  {desc}
+                </p>
+              )
+            )}
           </div>
         </DialogContent>
       </Dialog>

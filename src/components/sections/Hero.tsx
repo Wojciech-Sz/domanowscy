@@ -16,7 +16,11 @@ interface HeroProps {
   children?: React.ReactNode;
 }
 
-const Hero = ({ heroImages, className, children }: HeroProps) => {
+const Hero = ({
+  heroImages,
+  className,
+  children,
+}: HeroProps) => {
   const tl = gsap.timeline({
     repeat: -1,
   });

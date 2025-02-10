@@ -19,12 +19,18 @@ const Appointment = () => {
         className="fixed inset-0 -z-20 min-h-screen bg-[#9B9A99] bg-cover bg-center bg-no-repeat bg-blend-multiply"
       />
       <p className="max-w-[50ch] px-6 text-center font-montserrat text-2xl/none  text-white  lg:text-3xl/none">
-        Odrobinę nas poznaliście. Jeśli chcecie zaprosić nas do pracy nad Waszą
-        wymarzoną przestrzenią, jesteśmy gotowi.
+        Odrobinę nas poznaliście. Jeśli chcecie zaprosić nas
+        do pracy nad Waszą wymarzoną przestrzenią, jesteśmy
+        gotowi.
       </p>
 
-      <Link href={ROUTES.APPOINTMENT.href} className="flex items-center">
-        <Button className="btn-contact">SKONTAKUJ SIĘ Z NAMI</Button>
+      <Link
+        href={ROUTES.APPOINTMENT.href}
+        className="flex items-center"
+      >
+        <Button className="btn-contact">
+          SKONTAKUJ SIĘ Z NAMI
+        </Button>
       </Link>
     </section>
   );

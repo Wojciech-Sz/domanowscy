@@ -48,6 +48,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body
+        lang="pl"
         className={`${montserrat.className} ${museoSansCyrl.variable} antialiased`}
       >
         <main className="flex min-h-screen flex-col">

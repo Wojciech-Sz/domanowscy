@@ -13,7 +13,9 @@ const Footer = () => {
           className="flex items-center justify-center"
           scroll
         >
-          <span className="text-2xl/none font-bold">Domanowscy</span>
+          <span className="text-2xl/none font-bold">
+            Domanowscy
+          </span>
         </Link>
         <p className="block text-center leading-none sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2">
           © {new Date().getFullYear()} Domanowscy.

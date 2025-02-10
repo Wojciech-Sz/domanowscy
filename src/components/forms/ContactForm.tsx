@@ -39,14 +39,17 @@ const ContactForm = () => {
   });
   const [isPending, startTransition] = useTransition();
 
-  const handleSendEmail = async (data: z.infer<typeof ContactFormSchema>) => {
+  const handleSendEmail = async (
+    data: z.infer<typeof ContactFormSchema>
+  ) => {
     startTransition(async () => {
       const result = await sendEmail(data);
 
       if (result.success) {
         toast({
           title: "Sukces",
-          description: "Wiadomość została wysłana pomyślnie",
+          description:
+            "Wiadomość została wysłana pomyślnie",
         });
         form.reset();
       } else {
@@ -73,7 +76,11 @@ const ContactForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input className=" " placeholder="Imię" {...field} />
+                  <Input
+                    className=" "
+                    placeholder="Imię"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -87,7 +94,11 @@ const ContactForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input className=" " placeholder="Nazwisko" {...field} />
+                  <Input
+                    className=" "
+                    placeholder="Nazwisko"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -139,7 +150,11 @@ const ContactForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input className=" " placeholder="Temat" {...field} />
+                  <Input
+                    className=" "
+                    placeholder="Temat"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -179,8 +194,10 @@ const ContactForm = () => {
                 </FormControl>
 
                 <FormDescription>
-                  Wyrażam zgodę na przetwarzanie moich danych osobowych. Dane
-                  zostaną wykorzystane w celu odpowiedzi na zadane pytanie.
+                  Wyrażam zgodę na przetwarzanie moich
+                  danych osobowych. Dane zostaną
+                  wykorzystane w celu odpowiedzi na zadane
+                  pytanie.
                 </FormDescription>
 
                 <FormMessage />

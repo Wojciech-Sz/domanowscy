@@ -7,7 +7,10 @@ import { Separator } from "../ui/separator";
 
 const About = () => {
   return (
-    <section id="about" className="section section-pt-big pb-20">
+    <section
+      id="about"
+      className="section section-pt-big pb-20"
+    >
       <div className="section-container">
         <div>
           <h2 className="section-title">O Nas</h2>
@@ -29,7 +32,9 @@ const About = () => {
 
               <div className="tracking-tighter">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl/none font-bold">{name}</h3>
+                  <h3 className="text-xl/none font-bold">
+                    {name}
+                  </h3>
                   <p className="text-lg/none font-medium italic text-muted-foreground">
                     {position}
                   </p>

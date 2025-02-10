@@ -1,17 +1,22 @@
+import { Metadata } from "next";
 import React from "react";
 
 import HeroNavigation from "@/components/navigation/HeroNavigation";
 import ProjectsGallery from "@/components/ProjectsGallery";
 import Hero from "@/components/sections/Hero";
 import { Separator } from "@/components/ui/separator";
-import { interiorsHeroImages, interiorsImages } from "@/constants/gallery";
-import { Metadata } from "next";
+import {
+  interiorsHeroImages,
+  interiorsImages,
+} from "@/constants/gallery";
 
 export const metadata: Metadata = {
   title: "Wnętrza",
-  description: "Galeria naszych najlepszych projektów wnętrz.",
+  description:
+    "Galeria naszych najlepszych projektów wnętrz.",
   alternates: {
-    canonical: "https://white-hill-two.vercel.app/galeria/wnetrza",
+    canonical:
+      "https://white-hill-two.vercel.app/galeria/wnetrza",
   },
   openGraph: {
     url: "https://white-hill-two.vercel.app/galeria/wnetrza",
@@ -41,7 +46,10 @@ export const metadata: Metadata = {
 const Wnetrza = () => {
   return (
     <>
-      <Hero className="hero-gallery" heroImages={interiorsHeroImages}>
+      <Hero
+        className="hero-gallery"
+        heroImages={interiorsHeroImages}
+      >
         <HeroNavigation title="Wnętrza" />
       </Hero>
       <section className="section section-pb section-pt-small">

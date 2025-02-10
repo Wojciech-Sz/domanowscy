@@ -6,7 +6,11 @@ import ROUTES from "@/constants/routes";
 
 import SocialLinks from "./SocialLinks";
 
-const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
+const NavLinks = ({
+  closeMenu,
+}: {
+  closeMenu: () => void;
+}) => {
   return (
     <>
       <ul className="section-container mx-auto justify-between pb-5 md:flex-row">
@@ -16,7 +20,6 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
               <Link
                 href={href}
                 className="nav-link group"
-                prefetch={false}
                 scroll
                 onClick={closeMenu}
               >
@@ -36,7 +39,10 @@ const NavLinks = ({ closeMenu }: { closeMenu: () => void }) => {
               </ul>
             </li>
           ) : (
-            <li key={name} className="nav-link group h-full">
+            <li
+              key={name}
+              className="nav-link group h-full"
+            >
               <Link href={href} onClick={closeMenu}>
                 {name}
                 <div className="animated-border separator" />

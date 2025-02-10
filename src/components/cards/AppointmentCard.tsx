@@ -17,7 +17,10 @@ interface AppointmentCardProps {
   };
   id: number;
 }
-const AppointmentCard = ({ appointment, id }: AppointmentCardProps) => {
+const AppointmentCard = ({
+  appointment,
+  id,
+}: AppointmentCardProps) => {
   const [isDown, setIsDown] = useState<{
     [key: string]: boolean;
   }>({
@@ -42,7 +45,9 @@ const AppointmentCard = ({ appointment, id }: AppointmentCardProps) => {
 
       gsap.to(`#${contentTarget}`, {
         height: isDown[chevronTarget] ? "0" : "200",
-        overflowY: isDown[chevronTarget] ? "hidden" : "auto",
+        overflowY: isDown[chevronTarget]
+          ? "hidden"
+          : "auto",
         duration: 0.2,
         ease: "linear",
       });
@@ -53,10 +58,14 @@ const AppointmentCard = ({ appointment, id }: AppointmentCardProps) => {
     <div
       key={appointment.title}
       className="flex h-max w-full cursor-pointer flex-col gap-3 bg-white px-2 py-3 hover:shadow-md hover:shadow-gray-600"
-      onMouseDown={() => showAppointment(`chevron${id}`, `content${id}`)}
+      onMouseDown={() =>
+        showAppointment(`chevron${id}`, `content${id}`)
+      }
     >
       <div className="flex justify-between">
-        <h2 className="text-xl font-bold">{appointment.title}</h2>
+        <h2 className="text-xl font-bold">
+          {appointment.title}
+        </h2>
         <ChevronRight id={`chevron${id}`} />
       </div>
       <p>{appointment.description}</p>

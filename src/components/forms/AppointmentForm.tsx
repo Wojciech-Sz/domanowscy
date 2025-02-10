@@ -6,7 +6,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { pl } from "date-fns/locale"; // Polish locale
 import { CalendarIcon } from "lucide-react";
 import { useState, useTransition } from "react";
-import DatePicker, { registerLocale, setDefaultLocale } from "react-datepicker";
+import DatePicker, {
+  registerLocale,
+  setDefaultLocale,
+} from "react-datepicker";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -26,7 +29,10 @@ import { toast } from "@/hooks/use-toast";
 import { sendEmail } from "@/lib/actions/email.action";
 import { AppointmentFormSchema } from "@/lib/validations";
 
-import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
+import {
+  RadioGroup,
+  RadioGroupItem,
+} from "../ui/radio-group";
 
 const AppointmentForm = () => {
   registerLocale("pl", pl);
@@ -38,8 +44,10 @@ const AppointmentForm = () => {
   minDate.setMinutes(0);
   minDate.setSeconds(0);
   minDate.setMilliseconds(0);
-  if (minDate.getDay() === 0) minDate.setDate(minDate.getDate() + 1);
-  else if (minDate.getDay() === 6) minDate.setDate(minDate.getDate() + 2);
+  if (minDate.getDay() === 0)
+    minDate.setDate(minDate.getDate() + 1);
+  else if (minDate.getDay() === 6)
+    minDate.setDate(minDate.getDate() + 2);
 
   const initialValues = {
     firstName: "",
@@ -51,15 +59,21 @@ const AppointmentForm = () => {
     agree: false,
     payment: true,
   };
-  const form = useForm<z.infer<typeof AppointmentFormSchema>>({
+  const form = useForm<
+    z.infer<typeof AppointmentFormSchema>
+  >({
     resolver: zodResolver(AppointmentFormSchema),
     defaultValues: { ...initialValues },
   });
   const [isPending, startTransition] = useTransition();
 
-  const [maxTime, setMaxTime] = useState(new Date("2024-07-14T16:45"));
+  const [maxTime, setMaxTime] = useState(
+    new Date("2024-07-14T16:45")
+  );
 
-  const handleSubjectChange = (value: "15 min" | "1 h" | "2 h") => {
+  const handleSubjectChange = (
+    value: "15 min" | "1 h" | "2 h"
+  ) => {
     form.setValue("subject", value);
     const hours = form.getValues("date").getHours();
     const minutes = form.getValues("date").getMinutes();
@@ -97,7 +111,8 @@ const AppointmentForm = () => {
       if (result.success) {
         toast({
           title: "Sukces",
-          description: "Wiadomość została wysłana pomyślnie",
+          description:
+            "Wiadomość została wysłana pomyślnie",
         });
         form.reset();
       } else {
@@ -138,7 +153,10 @@ const AppointmentForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input placeholder="Nazwisko" {...field} />
+                  <Input
+                    placeholder="Nazwisko"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -152,7 +170,11 @@ const AppointmentForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input type="tel" placeholder="Numer telefonu" {...field} />
+                  <Input
+                    type="tel"
+                    placeholder="Numer telefonu"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -166,7 +188,11 @@ const AppointmentForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input type="email" placeholder="E-mail" {...field} />
+                  <Input
+                    type="email"
+                    placeholder="E-mail"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -183,7 +209,9 @@ const AppointmentForm = () => {
                 <FormControl>
                   <RadioGroup
                     value={field.value}
-                    onValueChange={(value: "15 min" | "1 h" | "2 h") => {
+                    onValueChange={(
+                      value: "15 min" | "1 h" | "2 h"
+                    ) => {
                       handleSubjectChange(value);
                       field.onChange(value);
                     }}
@@ -232,11 +260,14 @@ const AppointmentForm = () => {
                       aria-label="Potwierdzenie płatności"
                     />
                   </FormControl>
-                  <FormLabel>Potwierdzenie płatności</FormLabel>
+                  <FormLabel>
+                    Potwierdzenie płatności
+                  </FormLabel>
                 </div>
                 <div className="flex flex-col gap-1 leading-none">
                   <FormDescription>
-                    Dane do płatności dostępne w szczegółach konsultacji.
+                    Dane do płatności dostępne w szczegółach
+                    konsultacji.
                   </FormDescription>
                   <FormMessage />
                 </div>
@@ -259,7 +290,9 @@ const AppointmentForm = () => {
                         if (!date?.getHours()) {
                           date?.setHours(9);
                         }
-                        return field.onChange(date || minDate);
+                        return field.onChange(
+                          date || minDate
+                        );
                       }}
                       timeCaption="Godzina"
                       showTimeSelect
@@ -269,7 +302,8 @@ const AppointmentForm = () => {
                       timeIntervals={15}
                       maxTime={maxTime}
                       filterDate={(date) =>
-                        date.getDay() !== 0 && date.getDay() !== 6
+                        date.getDay() !== 0 &&
+                        date.getDay() !== 6
                       }
                       wrapperClassName="datePicker"
                     />
@@ -297,8 +331,9 @@ const AppointmentForm = () => {
                 </FormControl>
 
                 <FormDescription>
-                  Wyrażam zgodę na przetwarzanie moich danych osobowych. Dane
-                  zostaną wykorzystane w celu umówienia konsultacji.
+                  Wyrażam zgodę na przetwarzanie moich
+                  danych osobowych. Dane zostaną
+                  wykorzystane w celu umówienia konsultacji.
                 </FormDescription>
 
                 <FormMessage />

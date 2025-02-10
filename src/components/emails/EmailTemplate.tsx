@@ -36,7 +36,9 @@ export const EmailTemplate = ({
       <Preview>{previewText}</Preview>
       <Body style={main}>
         <Container style={container}>
-          <Heading style={h1}>{message ? "Pytanie" : "Konsultacja"}</Heading>
+          <Heading style={h1}>
+            {message ? "Pytanie" : "Konsultacja"}
+          </Heading>
           <Text style={text}>Dane kontaktowe:</Text>
 
           <Section style={section}>
@@ -64,13 +66,17 @@ export const EmailTemplate = ({
           </Section>
 
           <Section style={section}>
-            <Text style={label}>{message ? "Wiadomość:" : "Data:"}</Text>
+            <Text style={label}>
+              {message ? "Wiadomość:" : "Data:"}
+            </Text>
             <Text style={value}>{message || date}</Text>
           </Section>
 
           <Hr style={hr} />
 
-          <Text style={footer}>Wiadomość wysłana ze strony domanowscy.pl</Text>
+          <Text style={footer}>
+            Wiadomość wysłana ze strony domanowscy.pl
+          </Text>
         </Container>
       </Body>
     </Html>

@@ -7,8 +7,8 @@ import SocialLinks from "../navigation/SocialLinks";
 
 const Footer = () => {
   return (
-    <footer className="section-px flex h-24 w-full justify-center bg-foreground py-5 font-museoSansCyrl text-white lg:py-8">
-      <div className="relative flex w-full max-w-7xl items-center gap-3 max-sm:flex-col sm:justify-between">
+    <footer className="section-px flex w-full justify-center bg-foreground py-5 font-museoSansCyrl text-white lg:h-24 lg:py-8">
+      <div className="relative flex w-full max-w-7xl flex-col items-center justify-between gap-3 lg:flex-row">
         <Link
           href="/"
           prefetch={false}
@@ -18,10 +18,10 @@ const Footer = () => {
           <Image
             src={logo}
             alt="Domanowscy Architekci"
-            className="-ml-6 h-24 w-80"
+            className="-mt-8 h-24 w-80 lg:-ml-6 lg:mt-0"
           />
         </Link>
-        <p className="block text-center leading-none sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2">
+        <p className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 text-center leading-none">
           © {new Date().getFullYear()} Domanowscy.
           <br />
           Wszelkie prawa zastrzeżone.

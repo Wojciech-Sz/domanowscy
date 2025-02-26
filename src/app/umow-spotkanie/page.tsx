@@ -9,8 +9,7 @@ export const metadata: Metadata = {
   description:
     "Umów się na konsultacje. Wypełnij prosty formularz i zarezerwuj termin spotkania w naszym biurze. ",
   alternates: {
-    canonical:
-      "https://white-hill-two.vercel.app/umow-spotkanie",
+    canonical: "https://white-hill-two.vercel.app/umow-spotkanie",
   },
   openGraph: {
     url: "https://white-hill-two.vercel.app/umow-spotkanie",

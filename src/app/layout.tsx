@@ -25,7 +25,10 @@ export const metadata: Metadata = {
     },
   },
 
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png", sizes: "192x192" }],
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
+  },
 };
 
 export const viewport: Viewport = {
@@ -51,13 +54,13 @@ export default function RootLayout({
         lang="pl"
         className={`${montserrat.className} ${museoSansCyrl.variable} antialiased`}
       >
-        <main className="flex min-h-screen flex-col">
+        <section className="flex min-h-screen flex-col">
           <Navbar />
-          <section className="flex w-full flex-1 flex-col items-center">
+          <main className="flex w-full flex-1 flex-col items-center">
             {children}
-          </section>
+          </main>
           <Footer />
-        </main>
+        </section>
         <Toaster />
       </body>
     </html>

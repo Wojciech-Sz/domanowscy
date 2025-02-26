@@ -13,18 +13,12 @@ import { Separator } from "../ui/separator";
 const Projects = () => {
   const [visible, setVisible] = useState(false);
   return (
-    <section
-      id="projects"
-      className="section section-pt-big"
-    >
+    <section id="projects" className="section section-pt-big">
       <div className="section-container">
         <div className="relative flex w-full flex-col">
           <div className="flex h-max w-full flex-row items-center justify-between gap-2">
             <h2 className="section-title">Realizacje</h2>
-            <Button
-              className="btn"
-              onClick={() => setVisible(!visible)}
-            >
+            <Button className="btn" onClick={() => setVisible(!visible)}>
               Więcej
             </Button>
           </div>
@@ -32,10 +26,7 @@ const Projects = () => {
             className={`projects-links_container ${visible ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
           >
             {ROUTES.PROJECTS.map((link, i) => (
-              <div
-                key={link.name}
-                className="flex items-center gap-1 sm:gap-2"
-              >
+              <div key={link.name} className="flex items-center gap-1 sm:gap-2">
                 <Link
                   href={link.href}
                   className="projects-link group"

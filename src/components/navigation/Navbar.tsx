@@ -1,11 +1,13 @@
 "use client";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 import NavLinks from "./NavLinks";
 import SocialLinks from "./SocialLinks";
+import logo from "../../../public/logo.svg";
 import MenuIcon from "../icons/MenuIcon";
 import { Button } from "../ui/button";
 
@@ -82,7 +84,7 @@ const Navbar = () => {
     };
   }, [isOpen, toggleMenu]);
   return (
-    <nav
+    <header
       className={`section-px sticky top-0 z-50 h-16 w-full bg-background/90 ${!isOpen && "shadow-md"}`}
     >
       <div className="relative mx-auto flex h-full max-w-7xl items-center justify-between">
@@ -106,7 +108,7 @@ const Navbar = () => {
           scroll
           title="Powrót na góre"
         >
-          Domanowscy
+          <Image src={logo} alt="Domanowscy" className="h-16" />
         </Link>
         <div className="flex items-center gap-5">
           <SocialLinks className="hidden gap-2 sm:flex" />
@@ -121,16 +123,16 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <section
+      <nav
         className={`navbar-links_container ${isOpen ? "max-h-[70vh]" : "max-h-0"}`}
       >
         <NavLinks closeMenu={toggleMenu} />
-      </section>
+      </nav>
       <div
         className={`fixed ${isOpen ? "inset-x-0 bottom-0 top-16" : "hidden"} z-[-1]`}
         onClick={toggleMenu}
       />
-    </nav>
+    </header>
   );
 };
 

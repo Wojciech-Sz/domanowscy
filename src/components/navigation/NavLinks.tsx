@@ -50,7 +50,7 @@ const NavLinks = ({
             </li>
           )
         )}
-        <SocialLinks className="flex gap-2 sm:hidden" />
+        <SocialLinks className="flex gap-2 md:hidden" />
       </ul>
     </>
   );

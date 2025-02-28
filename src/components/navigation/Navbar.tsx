@@ -103,15 +103,19 @@ const Navbar = () => {
         </button>
         <Link
           href="#hero"
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-museoSansCyrl text-2xl font-black"
+          className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2 font-museoSansCyrl text-2xl font-black"
           prefetch={false}
           scroll
           title="Powrót na góre"
         >
-          <Image src={logo} alt="Domanowscy" className="h-16" />
+          <Image
+            src={logo}
+            alt="Domanowscy"
+            className="h-16"
+          />
         </Link>
         <div className="flex items-center gap-5">
-          <SocialLinks className="hidden gap-2 sm:flex" />
+          <SocialLinks className="hidden gap-2 md:flex" />
 
           <Link
             scroll

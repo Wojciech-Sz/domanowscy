@@ -7,21 +7,22 @@ import SocialLinks from "../navigation/SocialLinks";
 
 const Footer = () => {
   return (
-    <footer className="section-px flex w-full justify-center bg-foreground py-5 font-museoSansCyrl text-white lg:h-24 lg:py-8">
-      <div className="relative flex w-full max-w-7xl flex-col items-center justify-between gap-3 lg:flex-row">
+    <footer className="section-px flex min-h-24 w-full justify-center bg-foreground py-5 font-museoSansCyrl text-white lg:py-8">
+      <div className="relative flex w-full max-w-7xl flex-col items-center justify-between gap-3 md:flex-row">
         <Link
           href="/"
           prefetch={false}
-          className="flex items-center justify-center"
+          className="-mb-5 -mt-2 h-12 w-64 md:-ml-3 md:-mt-3 lg:-mb-3 lg:-ml-3.5 lg:w-80"
           scroll
         >
           <Image
             src={logo}
+            title="Home"
             alt="Domanowscy Architekci"
-            className="-mt-8 h-24 w-80 lg:-ml-6 lg:mt-0"
+            className=""
           />
         </Link>
-        <p className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 text-center leading-none">
+        <p className="block text-center leading-none md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
           © {new Date().getFullYear()} Domanowscy.
           <br />
           Wszelkie prawa zastrzeżone.

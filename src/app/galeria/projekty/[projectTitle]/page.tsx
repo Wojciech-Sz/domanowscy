@@ -64,7 +64,9 @@ export async function generateMetadata(props: {
       locale: "pl_PL",
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
+      title: projectTitle,
+      description: `${projectTitle} - Kompleksowa galeria zdjęć.`,
       images: [
         {
           url: imgUrl,

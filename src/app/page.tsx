@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Domanowscy Architekci",
     images: [
       {
-        url: "https://white-hill-two.vercel.app/Domanowscy.webp",
+        url: "https://white-hill-two.vercel.app/LogoOG.webp",
         alt: "Domanowscy Architekci | Budynki & Wnętrza",
         width: 1200,
         height: 630,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       "Kompleksowe usługi architektoniczne dla budynów i wnętrz dostosowane do Twoich potrzeb.",
     images: [
       {
-        url: "https://white-hill-two.vercel.app/Domanowscy.webp",
+        url: "https://white-hill-two.vercel.app/LogoOG.webp",
         alt: "Domanowscy Architekci | Budynki & Wnętrza",
       },
     ],

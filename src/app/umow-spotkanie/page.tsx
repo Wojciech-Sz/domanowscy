@@ -9,14 +9,15 @@ export const metadata: Metadata = {
   description:
     "Umów się na konsultacje. Wypełnij prosty formularz i zarezerwuj termin spotkania w naszym biurze. ",
   alternates: {
-    canonical: "https://white-hill-two.vercel.app/umow-spotkanie",
+    canonical:
+      "https://white-hill-two.vercel.app/umow-spotkanie",
   },
   openGraph: {
     url: "https://white-hill-two.vercel.app/umow-spotkanie",
     siteName: "Domanowscy Architekci",
     images: [
       {
-        url: "https://white-hill-two.vercel.app/Spotkanie.webp",
+        url: "https://white-hill-two.vercel.app/LogoOG.webp",
         alt: "Domanowscy Architekci | Umów spotkanie",
         width: 1200,
         height: 630,
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary",
     images: [
       {
-        url: "https://white-hill-two.vercel.app/Spotkanie.webp",
+        url: "https://white-hill-two.vercel.app/LogoOG.webp",
         alt: "Domanowscy Architekci | Umów spotkanie",
       },
     ],

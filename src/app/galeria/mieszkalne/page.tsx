@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Domanowscy Architekci",
     images: [
       {
-        url: "https://white-hill-two.vercel.app/Mieszkalne.webp",
+        url: "https://white-hill-two.vercel.app/LogoOG.webp",
         alt: "Domanowscy Architekci | Mieszkalne",
         width: 1200,
         height: 630,
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary",
     images: [
       {
-        url: "https://white-hill-two.vercel.app/Mieszkalne.webp",
+        url: "https://white-hill-two.vercel.app/LogoOG.webp",
         alt: "Domanowscy Architekci | Mieszkalne",
       },
     ],

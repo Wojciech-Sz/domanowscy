@@ -41,7 +41,7 @@ export async function generateMetadata(props: {
     };
   const imgUrl =
     project.imgUrl ||
-    "https://white-hill-two.vercel.app/LogoOG.webp";
+    "https://white-hill-two.vercel.app/LogoTC.webp";
 
   return {
     title: projectTitle,

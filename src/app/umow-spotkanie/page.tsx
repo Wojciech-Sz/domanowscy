@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary",
     images: [
       {
-        url: "https://white-hill-two.vercel.app/LogoOG.webp",
+        url: "https://white-hill-two.vercel.app/LogoTC.webp",
         alt: "Domanowscy Architekci | Umów spotkanie",
       },
     ],

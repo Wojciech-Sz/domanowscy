@@ -58,6 +58,7 @@ export async function generateMetadata(props: {
           alt: `Domanowscy Architekci | ${projectTitle}`,
           width: 1200,
           height: 630,
+          type: "image/webp",
         },
       ],
       type: "website",

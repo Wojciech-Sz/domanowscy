@@ -27,6 +27,7 @@ export const metadata: Metadata = {
         alt: "Domanowscy Architekci | Mieszkalne",
         width: 1200,
         height: 630,
+        type: "image/webp",
       },
     ],
     type: "website",

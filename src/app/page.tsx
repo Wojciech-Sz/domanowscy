@@ -10,7 +10,7 @@ import { heroImages } from "@/constants/gallery";
 
 export const metadata: Metadata = {
   description:
-    "Oferujemy kompleksowe usługi architektoniczne obejmujące projektowanie całych obiektów oraz aranżację wnętrz. Stawiamy na funkcjonalność i estetykę.",
+    "Oferujemy kompleksowe usługi architektoniczne obejmujące projektowanie całych obiektów oraz aranżację wnętrz. Nasze biuro znajduje się w Białymstoku, ale realizujemy projekty na terenie całej Polski.",
   keywords: [
     "budynki",
     "wnętrza",
@@ -35,6 +35,7 @@ export const metadata: Metadata = {
         alt: "Domanowscy Architekci | Budynki & Wnętrza",
         width: 1200,
         height: 630,
+        type: "image/webp",
       },
     ],
     type: "website",

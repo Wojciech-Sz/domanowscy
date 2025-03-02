@@ -2,7 +2,6 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import Image from "next/image";
 import React from "react";
 
 gsap.registerPlugin(useGSAP);
@@ -21,18 +20,17 @@ const Hero = ({
   className,
   children,
 }: HeroProps) => {
-  const tl = gsap.timeline({
-    repeat: -1,
-  });
-
   useGSAP(() => {
+    const tl = gsap.timeline({
+      repeat: -1,
+    });
     heroImages.forEach((image, i) => {
       tl.to(
         `#${image.id}`,
         {
           scale: 1.1,
           duration: 10,
-          ease: "linear",
+          ease: "none",
         },
         i > 0 ? ">-3" : ""
       )
@@ -41,7 +39,7 @@ const Hero = ({
           {
             opacity: 0,
             duration: 3,
-            ease: "linear",
+            ease: "power1.inOut",
           },
           ">-3"
         )
@@ -50,7 +48,7 @@ const Hero = ({
           {
             opacity: 1,
             duration: 3,
-            ease: "linear",
+            ease: "power1.inOut",
           },
           "<"
         )
@@ -64,17 +62,17 @@ const Hero = ({
     <section className={className}>
       <div id="hero" className="absolute -top-16" />
       {heroImages.map((image, i) => (
-        <Image
+        <div
           key={image.id}
           id={image.id}
-          src={image.imgUrl}
-          alt={image.id}
-          priority
-          width={1920}
-          height={1080}
-          className={`absolute size-full object-cover object-bottom ${
+          style={{
+            backgroundImage: `url(${image.imgUrl})`,
+          }}
+          className={`absolute inset-0 bg-cover bg-bottom bg-no-repeat transition-transform will-change-transform ${
             i !== 0 ? "opacity-0" : ""
           }`}
+          role="img"
+          aria-label={image.id}
         />
       ))}
       <div className="absolute inset-0 bg-foreground/50" />

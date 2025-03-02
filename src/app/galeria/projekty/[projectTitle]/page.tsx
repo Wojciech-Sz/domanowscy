@@ -32,10 +32,10 @@ export async function generateMetadata(props: {
       },
       robots: {
         index: false,
-        follow: true,
+        follow: false,
         googleBot: {
           index: false,
-          follow: true,
+          follow: false,
         },
       },
     };

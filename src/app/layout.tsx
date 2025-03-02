@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/sections/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import { schema } from "@/constants/schema";
 
 import { montserrat, museoSansCyrl } from "./fonts";
 
@@ -60,7 +61,13 @@ export default function RootLayout({
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="0Zaow7prLExlvy4AJzZyZg"
           async
-        ></script>
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schema),
+          }}
+        />
       </head>
       <body
         lang="pl"

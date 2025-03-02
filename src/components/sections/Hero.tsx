@@ -2,6 +2,7 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Image from "next/image";
 import React from "react";
 
 gsap.registerPlugin(useGSAP);
@@ -62,17 +63,17 @@ const Hero = ({
     <section className={className}>
       <div id="hero" className="absolute -top-16" />
       {heroImages.map((image, i) => (
-        <div
+        <Image
           key={image.id}
           id={image.id}
-          style={{
-            backgroundImage: `url(${image.imgUrl})`,
-          }}
-          className={`absolute inset-0 bg-cover bg-bottom bg-no-repeat transition-transform will-change-transform ${
+          src={image.imgUrl}
+          alt={image.id}
+          priority
+          width={1920}
+          height={1080}
+          className={`absolute size-full object-cover object-bottom transition-transform ${
             i !== 0 ? "opacity-0" : ""
           }`}
-          role="img"
-          aria-label={image.id}
         />
       ))}
       <div className="absolute inset-0 bg-foreground/50" />

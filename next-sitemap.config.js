@@ -14,7 +14,28 @@ module.exports = {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/404", "/500"],
+      },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+        disallow: ["/404", "/500"],
       },
     ],
+  },
+  transform: async (config, path) => {
+    // Custom priority for different pages
+    const priorities = {
+      "/": 1.0,
+      "/galeria": 0.8,
+      "/kontakt": 0.7,
+    };
+
+    return {
+      loc: path,
+      changefreq: config.changefreq,
+      priority: priorities[path] || config.priority,
+      lastmod: new Date().toISOString(),
+    };
   },
 };

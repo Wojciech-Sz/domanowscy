@@ -1,13 +1,13 @@
 "use client";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
+import { Logo } from "@/components/icons/Logo";
+
 import NavLinks from "./NavLinks";
 import SocialLinks from "./SocialLinks";
-import logo from "../../../public/logo.svg";
 import MenuIcon from "../icons/MenuIcon";
 import { Button } from "../ui/button";
 
@@ -108,11 +108,7 @@ const Navbar = () => {
           scroll
           title="Powrót na góre"
         >
-          <Image
-            src={logo}
-            alt="Domanowscy"
-            className="h-16"
-          />
+          <Logo className="h-16 w-max" />
         </Link>
         <div className="flex items-center gap-5">
           <SocialLinks className="hidden gap-2 md:flex" />

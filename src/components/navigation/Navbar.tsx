@@ -4,10 +4,9 @@ import { gsap } from "gsap";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
-import { Logo } from "@/components/icons/Logo";
-
 import NavLinks from "./NavLinks";
 import SocialLinks from "./SocialLinks";
+import { Logo } from "../icons";
 import MenuIcon from "../icons/MenuIcon";
 import { Button } from "../ui/button";
 

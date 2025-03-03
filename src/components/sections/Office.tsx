@@ -3,7 +3,7 @@ import React from "react";
 
 import { office } from "@/constants";
 
-import { LogoTagline } from "../icons/Logo";
+import { LogoTagline } from "../icons";
 import { Separator } from "../ui/separator";
 
 const Office = () => {

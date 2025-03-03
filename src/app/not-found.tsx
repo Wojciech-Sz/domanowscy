@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: { absolute: "404: Strona nie została znaleziona" },
+  title: "404: Strona nie została znaleziona",
   robots: {
     index: false,
     follow: false,

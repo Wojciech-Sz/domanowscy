@@ -2,7 +2,7 @@ export const schema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Domanowscy Architekci",
-  image: "https://white-hill-two.vercel.app/LogoOG.webp",
+  image: "https://white-hill-two.vercel.app/LogoOG2.webp",
   "@id": "https://white-hill-two.vercel.app/",
   url: "https://white-hill-two.vercel.app/",
   telephone: "+48501458229",

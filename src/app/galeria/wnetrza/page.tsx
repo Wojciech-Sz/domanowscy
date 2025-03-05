@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Domanowscy Architekci",
     images: [
       {
-        url: "https://white-hill-two.vercel.app/LogoOG.webp",
+        url: "https://white-hill-two.vercel.app/LogoOG3.webp",
         alt: "Domanowscy Architekci | Wnętrza",
         width: 1200,
         height: 630,
